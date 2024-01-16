@@ -1,8 +1,11 @@
 import "./App.css";
 
 const App = () => {
-  const mullish = {
+  const mulish = {
     fontFamily: "'Mulish', sans-serif",
+  };
+  const sofiaSans = {
+    fontFamily: "'Sofia Sans', sans-serif",
   };
   return <div>App</div>;
 };
