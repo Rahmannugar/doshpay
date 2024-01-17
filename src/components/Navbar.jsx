@@ -2,7 +2,7 @@ import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
 
-const Navbar = () => {
+const Navbar = ({ mulish, sofiaSans }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleNav = () => {
     setMenuOpen(!menuOpen);
@@ -12,9 +12,9 @@ const Navbar = () => {
     backdropFilter: "blur(100px)",
   };
   return (
-    <nav className="fixed z-20 w-full h-16 md:h-24 shadow-2xl bg-[#121621]">
+    <nav className="fixed z-20 w-full h-20 md:h-28 bg-[#121621]">
       <div className="flex justify-between items-center h-full w-full px-4 lg:px-10 xl:px-16">
-        <a href="/">
+        <a href="/" className="flex justify-center items-center space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="36"
@@ -29,33 +29,16 @@ const Navbar = () => {
               fill="white"
             />
           </svg>
+          <h1 style={sofiaSans} className="text-white text-xl lg:text-2xl">
+            Doshpay
+          </h1>
         </a>
-        <div>
-          <ul className="hidden sm:flex sm:justify-center sm:items-center text-white sm:space-x-6 lg:space-x-10 xl:space-x-16  text-xl uppercase cursor-pointer">
-            <a href="#">
-              <li>Home</li>
-            </a>
-            <a href="#">
-              <li>About</li>
-            </a>
-            <a href="#services">
-              <li>Services</li>
-            </a>
-            <a href="#">
-              <button className="bg-primary_color text-white py-2 px-5 rounded-md duration-300 hover:bg-gray-600">
-                Login
-              </button>
-            </a>
-          </ul>
-        </div>
 
-        <IconButton
-          style={{ color: "white" }}
-          onClick={handleNav}
-          className="sm:hidden cursor-pointer"
-        >
+        <div className="hidden sm:flex sm:justify-center sm:items-center text-white sm:space-x-6 lg:space-x-10 xl:space-x-16  text-xl uppercase cursor-pointer"></div>
+
+        <div onClick={handleNav} className="sm:hidden text-white">
           <MenuIcon />
-        </IconButton>
+        </div>
       </div>
 
       <div
@@ -65,7 +48,7 @@ const Navbar = () => {
             : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
         }
       >
-        <ul className="uppercase cursor-pointer flex flex-col items-center justify-center py-20 space-y-10">
+        <div className="uppercase cursor-pointer  flex flex-col items-center justify-center py-20 space-y-10">
           <a href="#">
             <li>Home</li>
           </a>
@@ -80,7 +63,7 @@ const Navbar = () => {
               Login
             </button>
           </a>
-        </ul>
+        </div>
       </div>
     </nav>
   );

@@ -13,7 +13,7 @@ const App = () => {
   };
   return (
     <div>
-      <Navbar />
+      <Navbar mulish={mulish} sofiaSans={sofiaSans} />
     </div>
   );
 };
