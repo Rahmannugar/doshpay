@@ -7,6 +7,9 @@ const App = () => {
   const sofiaSans = {
     fontFamily: "'Sofia Sans', sans-serif",
   };
+  const dmSans = {
+    fontFamily: "'DM Sans', sans-serif",
+  };
   return <div>App</div>;
 };
 
