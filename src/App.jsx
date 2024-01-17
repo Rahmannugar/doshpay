@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   const mulish = {
@@ -10,7 +11,11 @@ const App = () => {
   const dmSans = {
     fontFamily: "'DM Sans', sans-serif",
   };
-  return <div>App</div>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 };
 
 export default App;
