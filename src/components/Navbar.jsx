@@ -1,6 +1,5 @@
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import { IconButton } from "@mui/material";
 
 const Navbar = ({ mulish, sofiaSans }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,7 +35,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
 
         <div
           style={mulish}
-          className="hidden sm:flex sm:justify-center sm:items-center text-white sm:space-x-6 lg:space-x-10 xl:space-x-16 cursor-pointer"
+          className="hidden sm:flex sm:justify-center sm:items-center text-white sm:space-x-3 lg:space-x-6 cursor-pointer"
         >
           <h1>FAQs</h1>
           <h1>Contact us</h1>
