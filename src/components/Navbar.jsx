@@ -36,11 +36,11 @@ const Navbar = ({ mulish, sofiaSans }) => {
 
         <div
           style={mulish}
-          className="hidden sm:flex sm:justify-center sm:items-center text-white sm:space-x-6 lg:space-x-10 xl:space-x-16  uppercase cursor-pointer"
+          className="hidden sm:flex sm:justify-center sm:items-center text-white sm:space-x-6 lg:space-x-10 xl:space-x-16 cursor-pointer"
         >
           <h1>FAQs</h1>
           <h1>Contact us</h1>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center rounded-full border-[1px] w-[219px] h-[48px] border-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -55,7 +55,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
             </svg>
             <h1> Download on App Store</h1>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center  rounded-full border-[1px] w-[219px] h-[48px] border-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -87,11 +87,11 @@ const Navbar = ({ mulish, sofiaSans }) => {
         <div
           onClick={handleNav}
           style={mulish}
-          className="uppercase cursor-pointer w-full h-screen flex flex-col items-center justify-center py-20 space-y-10"
+          className="cursor-pointer w-full h-screen flex flex-col items-center justify-center py-20 space-y-10"
         >
           <h1>FAQs</h1>
           <h1>Contact us</h1>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center  rounded-full border-[1px] w-[219px] h-[48px] border-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -106,7 +106,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
             </svg>
             <h1> Download on App Store</h1>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center  rounded-full border-[1px] w-[219px] h-[48px] border-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
