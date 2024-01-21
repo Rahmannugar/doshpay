@@ -14,6 +14,7 @@ const App = () => {
   return (
     <div>
       <Navbar mulish={mulish} sofiaSans={sofiaSans} />
+      <Hero />
     </div>
   );
 };
