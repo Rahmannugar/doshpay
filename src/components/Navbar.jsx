@@ -11,7 +11,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
     backdropFilter: "blur(100px)",
   };
   return (
-    <nav className="fixed z-20 w-full h-20 md:h-24 lg:h-28 bg-[#121621]">
+    <nav className="fixed z-20 w-full h-20 md:h-24 lg:h-28 bg-[#161c2b]">
       <div className="flex justify-between items-center h-full w-full px-4 lg:px-10 xl:px-16">
         <a href="/" className="flex justify-center items-center space-x-2">
           <svg
