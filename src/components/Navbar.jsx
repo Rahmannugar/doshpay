@@ -8,7 +8,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
   };
 
   return (
-    <nav className="fixed z-20 w-full h-20 md:h-24 lg:h-28 bg-[#161c2b]">
+    <nav className="fixed md:relative w-full h-24 lg:h-28 bg-[#1a1a29]">
       <div className="flex justify-between items-center h-full w-full px-4 lg:px-10 xl:px-16">
         <a href="/" className="flex justify-center items-center space-x-2">
           <svg
@@ -32,7 +32,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
 
         <div
           style={mulish}
-          className="hidden sm:flex sm:justify-center sm:items-center text-white sm:space-x-3 lg:space-x-6 cursor-pointer"
+          className="hidden md:flex md:justify-center md:items-center text-white md:space-x-3 lg:space-x-6 cursor-pointer"
         >
           <h1>FAQs</h1>
           <h1>Contact us</h1>
@@ -68,7 +68,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
           </div>
         </div>
 
-        <div onClick={handleNav} className="sm:hidden text-white">
+        <div onClick={handleNav} className="md:hidden text-white">
           <MenuIcon />
         </div>
       </div>
@@ -76,7 +76,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[70%] sm:hidden h-screen bg-white border-r-[1px] ease-in duration-300"
+            ? "fixed left-0 top-0 w-[70%] md:hidden h-screen bg-white border-r-[1px] ease-in duration-300"
             : "fixed left-[-100%] top-0  ease-in duration-300"
         }
       >

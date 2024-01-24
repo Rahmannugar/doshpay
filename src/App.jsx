@@ -1,6 +1,6 @@
 import "./App.css";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const App = () => {
   const mulish = {
@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div>
       <Navbar mulish={mulish} sofiaSans={sofiaSans} />
-      <Hero />
+      <Hero mulish={mulish} dmSans={dmSans} />
     </div>
   );
 };
