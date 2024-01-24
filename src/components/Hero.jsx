@@ -1,9 +1,9 @@
-import React from 'react'
+import { useMediaQuery } from "@mui/material";
+import React from "react";
 
 const Hero = () => {
-  return (
-    <div>Hero</div>
-  )
-}
+  const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
+  return <div>Hero</div>;
+};
 
-export default Hero
+export default Hero;
