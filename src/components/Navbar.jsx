@@ -76,8 +76,8 @@ const Navbar = ({ mulish, sofiaSans }) => {
       <div
         className={
           menuOpen
-            ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-white border-r-[1px] ease-in duration-500"
-            : "fixed left-[-100%] top-0  ease-in duration-500"
+            ? "fixed left-0 top-0 w-[70%] sm:hidden h-screen bg-white border-r-[1px] ease-in duration-300"
+            : "fixed left-[-100%] top-0  ease-in duration-300"
         }
       >
         <div
@@ -87,7 +87,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
         >
           <h1>FAQs</h1>
           <h1>Contact us</h1>
-          <div className="flex justify-center items-center  rounded-full border-[1px] w-[259px] h-[48px] gap-[15px] border-white bg-[#161c2b] text-white">
+          <div className="flex justify-center items-center text-sm rounded-full w-[229px] h-[48px] gap-[15px] border-white bg-[#161c2b] text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -102,7 +102,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
             </svg>
             <h1> Download on App Store</h1>
           </div>
-          <div className="flex justify-center items-center  rounded-full border-[1px] w-[259px] h-[48px] gap-[15px] border-white bg-[#161c2b] text-white">
+          <div className="flex justify-center items-center text-sm  rounded-full w-[229px] h-[48px] gap-[15px] border-white bg-[#161c2b] text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -115,7 +115,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
                 fill="white"
               />
             </svg>
-            Download on Play Store
+            <h1> Download on Play Store</h1>
           </div>
         </div>
       </div>
