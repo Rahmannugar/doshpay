@@ -66,7 +66,7 @@ const Hero = ({ dmSans, mulish }) => {
             </defs>
           </svg> */}
 
-          <div className="lg:px-10 xl:px-16 flex justify-between items-center z-20 2xl:justify-center">
+          <div className="lg:px-10 xl:px-16 flex justify-between  z-20 2xl:justify-center">
             <div className="space-y-6 flex flex-col text-white">
               <h1
                 style={mulish}
@@ -126,7 +126,7 @@ const Hero = ({ dmSans, mulish }) => {
               <img
                 src={IphoneSlant}
                 alt="IphoneSlant"
-                className=" h-[553.434px]   flex-shrink-0"
+                className=" h-[553.434px] z-10  flex-shrink-0"
               />
             </div>
           </div>
