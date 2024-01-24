@@ -1,8 +1,7 @@
 import { useMediaQuery } from "@mui/material";
 import IphoneMain from "../assets/iphone-main.png";
-import IphoneMainBody from "../assets/iphone-main-body.png";
 import IphoneSlant from "../assets/iphone-slant.png";
-import IphoneSlantBody from "../assets/iphone-slant-body.png";
+import Notification from "../assets/Notification.png";
 
 const Hero = ({ dmSans, mulish }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
@@ -33,8 +32,8 @@ const Hero = ({ dmSans, mulish }) => {
         <div className="relative">
           <div style={topRightStyle} className="absolute top-0 left-0"></div>
           <div style={topLeftStyle} className="absolute top-20 right-0"></div>
-          <svg
-            className="absolute"
+          {/* <svg
+            className=""
             style={strokeStyle}
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -64,24 +63,58 @@ const Hero = ({ dmSans, mulish }) => {
                 />
               </linearGradient>
             </defs>
-          </svg>
+          </svg> */}
 
-          <div className=" lg:px-10 xl:px-16 ">
+          <div className="lg:px-10 xl:px-16 flex justify-between items-center z-20 2xl:justify-center">
             <div className="space-y-6 flex flex-col text-white">
               <h1
                 style={mulish}
-                className="max-w-[600px] text-[54px] leading-[72px] font-extrabold"
+                className="max-w-[550px] lg:text-4xl xl:text-[54px] lg:leading-[50px] xl:leading-[72px] font-extrabold"
               >
                 Redefining Banking for a Seamless Future
               </h1>
               <p
                 style={dmSans}
-                className="max-w-[550px] text-lg leading-6 font-medium"
+                className="lg:max-w-[500px] xl:max-w-[550px] xl:text-lg leading-6 font-medium"
               >
                 The neobank that puts you in control. Experience lightning-fast
                 money transfers, effortless bill management, and simplified
                 financial requests.
               </p>
+            </div>
+
+            <div className="flex lg:space-x-[-50px] xl:space-x-[-40px]">
+              <div className=" flex flex-col justify-center items-center relative ">
+                <img
+                  src={Notification}
+                  alt="notification"
+                  className="absolute top-0 w-[1000px] flex-shrink-0 z-20"
+                />
+                <img
+                  src={IphoneMain}
+                  alt="IphoneMainBody"
+                  className=" h-[541.699px] flex-shrink-0"
+                />
+                <svg
+                className=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="329"
+                  height="57"
+                  viewBox="0 0 329 57"
+                  fill="none"
+                >
+                  <path
+                    d="M327 1C308.46 35.5 254.246 55 164.5 55C74.7537 55 2 30.8234 2 1"
+                    stroke="#92E3A9"
+                    stroke-width="4"
+                  />
+                </svg>
+              </div>
+              <img
+                src={IphoneSlant}
+                alt="IphoneSlant"
+                className=" h-[553.434px] z-20  flex-shrink-0"
+              />
             </div>
           </div>
         </div>
