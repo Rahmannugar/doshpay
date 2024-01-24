@@ -87,7 +87,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
         >
           <h1>FAQs</h1>
           <h1>Contact us</h1>
-          <div className="flex justify-center items-center  rounded-full border-[1px] w-[219px] h-[48px] border-white">
+          <div className="flex justify-center items-center  rounded-full border-[1px] w-[259px] h-[48px] gap-[15px] border-white bg-[#161c2b] text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -102,7 +102,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
             </svg>
             <h1> Download on App Store</h1>
           </div>
-          <div className="flex justify-center items-center  rounded-full border-[1px] w-[219px] h-[48px] border-white">
+          <div className="flex justify-center items-center  rounded-full border-[1px] w-[259px] h-[48px] gap-[15px] border-white bg-[#161c2b] text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
