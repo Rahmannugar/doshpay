@@ -1,5 +1,8 @@
 import { useMediaQuery } from "@mui/material";
-import React from "react";
+import IphoneMain from "../assets/iphone-main.png";
+import IphoneMainBody from "../assets/iphone-main-body.png";
+import IphoneSlant from "../assets/iphone-slant.png";
+import IphoneSlantBody from "../assets/iphone-slant-body.png";
 
 const Hero = ({ dmSans, mulish }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
