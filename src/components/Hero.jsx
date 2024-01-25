@@ -40,7 +40,7 @@ const Hero = ({ dmSans, mulish }) => {
   return (
     <div className="bg-[#1a1a29]">
       {isNonMobileScreens ? (
-        <div className="relative py-20">
+        <div className="relative py-24">
           <div style={topRightStyle} className="absolute top-0 left-0"></div>
           <div style={topLeftStyle} className="absolute top-20 right-0"></div>
           <svg
@@ -197,13 +197,13 @@ const Hero = ({ dmSans, mulish }) => {
 
             <div className="flex items-center space-x-7">
               <img
-                src={Cbn}
-                alt="Cbn"
+                src={Ndic}
+                alt="Ndic"
                 className="w-[60px] h-[60px] flex-shrink-0 object-cover rounded-[16px] border-[#5D32E3] border-[1px]"
               />
               <img
-                src={Ndic}
-                alt="Ndic"
+                src={Cbn}
+                alt="Cbn"
                 className="w-[60px] h-[60px] flex-shrink-0 object-cover rounded-[16px] border-[#5D32E3] border-[1px]"
               />
               <img
