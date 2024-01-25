@@ -64,7 +64,7 @@ const Hero = ({ dmSans, mulish }) => {
                 />
               </linearGradient>
             </defs>
-          </svg> */}
+          </svg> 
 
           <div className="lg:px-10 xl:px-16 flex justify-between  z-20 2xl:justify-center">
             <div className="space-y-6 flex flex-col text-white">
