@@ -33,7 +33,7 @@ const Hero = ({ dmSans, mulish }) => {
         <div className="relative">
           <div style={topRightStyle} className="absolute top-0 left-0"></div>
           <div style={topLeftStyle} className="absolute top-20 right-0"></div>
-          {/* <svg
+         <svg
             className=""
             style={strokeStyle}
             xmlns="http://www.w3.org/2000/svg"
