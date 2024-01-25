@@ -8,7 +8,7 @@ import Ndic from "../assets/ndic.png";
 import Nitda from "../assets/nitda.png";
 
 const Hero = ({ dmSans, mulish }) => {
-  const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
+  const isNonMobileScreens = useMediaQuery("(min-width:768px)");
   const topRightStyle = {
     borderRadius: "520px",
     background:
@@ -40,7 +40,7 @@ const Hero = ({ dmSans, mulish }) => {
   return (
     <div className="bg-[#1a1a29]">
       {isNonMobileScreens ? (
-        <div className="relative py-24">
+        <div className="relative md:py-20 md:mt-[-40px] lg:mt-0 lg:py-24">
           <div style={topRightStyle} className="absolute top-0 left-0"></div>
           <div style={topLeftStyle} className="absolute top-20 right-0"></div>
           <svg
@@ -76,17 +76,17 @@ const Hero = ({ dmSans, mulish }) => {
             </defs>
           </svg>
 
-          <div className="lg:px-10 xl:px-16 flex justify-between  z-20 2xl:justify-center">
+          <div className="px-10 xl:px-16 flex justify-between  z-20 2xl:justify-center">
             <div className="flex flex-col mt-16 text-white">
               <h1
                 style={mulish}
-                className="max-w-[550px] lg:text-4xl xl:text-[54px] lg:leading-[50px] xl:leading-[72px] font-extrabold"
+                className="max-w-[550px] md:text-2xl lg:text-4xl xl:text-[54px] lg:leading-[50px] xl:leading-[72px] font-extrabold"
               >
                 Redefining Banking for a Seamless Future
               </h1>
               <p
                 style={dmSans}
-                className="lg:max-w-[500px] xl:max-w-[550px] xl:text-lg leading-6 font-medium mt-7"
+                className="md:max-w-[480px] lg:max-w-[500px] xl:max-w-[550px] xl:text-lg leading-6 font-medium md:mt-5 lg:mt-7"
               >
                 The neobank that puts you in control. Experience lightning-fast
                 money transfers, effortless bill management, and simplified
@@ -95,7 +95,7 @@ const Hero = ({ dmSans, mulish }) => {
 
               <div
                 style={heroButtonStyle}
-                className="flex justify-center items-center h-[56px] w-[232px] gap-[10px] mt-16"
+                className="flex justify-center items-center h-[56px] w-[232px] gap-[10px] md:mt-10 lg:mt-16"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +144,7 @@ const Hero = ({ dmSans, mulish }) => {
             </div>
 
             <div className="flex lg:space-x-[-50px] xl:space-x-[-40px]">
-              <div className=" flex flex-col justify-center items-center relative ">
+              <div className="justify-center items-center relative md:hidden lg:flex ">
                 <img
                   src={Notification}
                   alt="notification"
@@ -190,7 +190,7 @@ const Hero = ({ dmSans, mulish }) => {
             </div>
           </div>
 
-          <div className="lg:px-10 xl:px-16 space-y-7">
+          <div className="md:mt-[-150px] lg:mt-0 px-10 xl:px-16 2xl:px-0 2xl:justify-center 2xl:flex 2xl:flex-col 2xl:mt-10 2xl:items-center space-y-7">
             <h1 style={mulish} className="text-[#92E3A9] font-bold text-lg">
               Licensed by
             </h1>
