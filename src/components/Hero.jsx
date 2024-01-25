@@ -89,15 +89,15 @@ const Hero = ({ dmSans, mulish }) => {
                 <img
                   src={Notification}
                   alt="notification"
-                  className="absolute top-0 w-[1000px] flex-shrink-0 z-20"
+                  className="absolute top-0 flex-shrink-0 z-20"
                 />
                 <img
                   src={IphoneMain}
                   alt="IphoneMainBody"
-                  className=" h-[541.699px] flex-shrink-0"
+                  className="h-[541.699px] flex-shrink-0"
                 />
 
-                <div className=" absolute  flex ">
+                <div className=" absolute flex ">
                   <img
                     src={GreenEllipse}
                     alt="GreenEllipse"
