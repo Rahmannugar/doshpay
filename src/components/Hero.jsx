@@ -33,8 +33,8 @@ const Hero = ({ dmSans, mulish }) => {
         <div className="relative">
           <div style={topRightStyle} className="absolute top-0 left-0"></div>
           <div style={topLeftStyle} className="absolute top-20 right-0"></div>
-         <svg
-            className=""
+          <svg
+            className="absolute"
             style={strokeStyle}
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
@@ -64,7 +64,7 @@ const Hero = ({ dmSans, mulish }) => {
                 />
               </linearGradient>
             </defs>
-          </svg> 
+          </svg>
 
           <div className="lg:px-10 xl:px-16 flex justify-between  z-20 2xl:justify-center">
             <div className="space-y-6 flex flex-col text-white">
