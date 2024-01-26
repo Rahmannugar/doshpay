@@ -103,15 +103,16 @@ const Hero = ({ dmSans, mulish }) => {
               >
                 Redefining Banking for a Seamless Future
               </h1>
-              <p
-                style={dmSans}
-                className="md:max-w-[480px] lg:max-w-[500px] xl:max-w-[550px] xl:text-lg leading-6 font-medium md:mt-5 lg:mt-7"
-              >
-                The neobank that puts you in control. Experience lightning-fast
-                money transfers, effortless bill management, and simplified
-                financial requests.
-              </p>
-
+              <div style={dmSans}>
+                <p
+                  style={{ color: "rgba(255, 255, 255, 0.80)" }}
+                  className="md:max-w-[480px] lg:max-w-[500px] xl:max-w-[550px] xl:text-lg leading-6 font-medium md:mt-5 lg:mt-7"
+                >
+                  The neobank that puts you in control. Experience
+                  lightning-fast money transfers, effortless bill management,
+                  and simplified financial requests.
+                </p>
+              </div>
               <div
                 style={heroButtonStyle}
                 className="flex justify-center items-center h-[56px] w-[232px] gap-[10px] md:mt-10 lg:mt-16"
