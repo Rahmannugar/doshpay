@@ -18,7 +18,7 @@ const Hero = ({ dmSans, mulish }) => {
     height: "520px",
   };
 
-  const mobileTopRightStyle = {
+  const mobileTopRighStyle = {
     borderRadius: "520px",
     background:
       "linear-gradient(128deg, rgba(255, 162, 21, 0.33) 22.59%, rgba(95, 18, 220, 0.38) 59.8%, rgba(255, 81, 238, 0.38) 127.99%)",
