@@ -18,13 +18,13 @@ const Hero = ({ dmSans, mulish }) => {
     height: "520px",
   };
 
-  const mobileTopRighStyle = {
+  const mobileTopStyle = {
     borderRadius: "520px",
     background:
       "linear-gradient(128deg, rgba(255, 162, 21, 0.33) 22.59%, rgba(95, 18, 220, 0.38) 59.8%, rgba(255, 81, 238, 0.38) 127.99%)",
     filter: "blur(300px)",
-    width: "520px",
-    height: "520px",
+    width: "100%",
+    height: "100%",
   };
 
   const topLeftStyle = {
@@ -36,13 +36,13 @@ const Hero = ({ dmSans, mulish }) => {
     height: "520px",
   };
 
-  const mobileTopLeftStyle = {
+  const mobileBottomStyle = {
     borderRadius: "520px",
     background:
       "linear-gradient(116deg, rgba(126, 81, 255, 0.59) 13.21%, rgba(18, 220, 76, 0.83) 54.9%, #FFA215 79.66%)",
     filter: "blur(300px)",
-    width: "520px",
-    height: "520px",
+    width: "100%",
+    height: "100%",
   };
 
   const strokeStyle = {
@@ -234,9 +234,9 @@ const Hero = ({ dmSans, mulish }) => {
           </div>
         </div>
       ) : (
-        <div className="bg-[#1a1a29] relative py-36 text-center ">
-          <div style={topRightStyle} className="absolute top-0"></div>
-          <div style={topLeftStyle} className="absolute bottom-0"></div>
+        <div className="bg-[#1a1a29] relative py-20 text-center ">
+          {/* <div style={mobileTopStyle} className="absolute top-0"></div>
+          <div style={mobileBottomStyle} className="absolute bottom-0"></div> */}
           <svg
             className="absolute"
             style={strokeStyle}
@@ -277,14 +277,16 @@ const Hero = ({ dmSans, mulish }) => {
             >
               Redefining Banking for a Seamless Future
             </h1>
-            <p
-              style={{ color: "rgba(255, 255, 255, 0.80)" }}
-              className="font-medium leading-6 text-lg"
-            >
-              The neobank that puts you in control. Experience lightning-fast
-              money transfers, effortless bill management, and simplified
-              financial requests.
-            </p>
+            <div style={dmSans} className="mt-5">
+              <p
+                style={{ color: "rgba(255, 255, 255, 0.80)" }}
+                className="font-medium leading-6 text-lg mx-auto max-w-[364px]"
+              >
+                The neobank that puts you in control. Experience lightning-fast
+                money transfers, effortless bill management, and simplified
+                financial requests.
+              </p>
+            </div>
           </div>
         </div>
       )}
