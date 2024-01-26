@@ -215,7 +215,14 @@ const Hero = ({ dmSans, mulish }) => {
           </div>
         </div>
       ) : (
-        <div className="bg-[#1a1a29]"></div>
+        <div className="bg-[#1a1a29]">
+          <h1
+            style={mulish}
+            className="text-[36px] max-w-[340px] leading-[44px] text-center font-extrabold text-white"
+          >
+            Redefining Banking for a Seamless Future
+          </h1>
+        </div>
       )}
     </div>
   );
