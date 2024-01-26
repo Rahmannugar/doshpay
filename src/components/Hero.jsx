@@ -215,7 +215,7 @@ const Hero = ({ dmSans, mulish }) => {
           </div>
         </div>
       ) : (
-        <div></div>
+        <div className="bg-[#1a1a29]"></div>
       )}
     </div>
   );
