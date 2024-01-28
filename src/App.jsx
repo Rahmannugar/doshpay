@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Partner from "./components/Partner";
 
 const App = () => {
   const mulish = {
@@ -16,6 +17,7 @@ const App = () => {
     <div>
       <Navbar mulish={mulish} sofiaSans={sofiaSans} />
       <Hero mulish={mulish} dmSans={dmSans} />
+      <Partner mulish={mulish} />
     </div>
   );
 };
