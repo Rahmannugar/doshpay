@@ -85,13 +85,13 @@ const Partner = ({ mulish }) => {
             service providers in Nigeria
           </h1>
 
-          <div className="flex justify-center items-center space-x-7 mt-20">
+          <div className="flex justify-center items-center space-x-7 mt-20 overflow-hidden">
             {imageArray.map((image) => (
               <div
                 style={{
                   background: image.background,
                 }}
-                className="rounded-[130px] flex justify-center items-center w-[64px] h-[64px]"
+                className="rounded-[130px] flex flex-shrink-0 justify-center items-center w-[64px] h-[64px]"
               >
                 <img
                   id={image.id}
@@ -109,6 +109,24 @@ const Partner = ({ mulish }) => {
             Partner with <span className="text-[#5D32E3]">Over 20 </span>
             service providers in Nigeria
           </h1>
+
+          <div className="flex justify-center items-center space-x-7 mt-16 overflow-hidden">
+            {imageArray.map((image) => (
+              <div
+                style={{
+                  background: image.background,
+                }}
+                className="rounded-[108.837px] flex flex-shrink-0 justify-center items-center w-[53.581px] h-[53.581px]"
+              >
+                <img
+                  id={image.id}
+                  src={image.url}
+                  className="rounded-[43.535px] object-cover w-[43.535px] h-[43.535px]"
+                  alt={image.url}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>
