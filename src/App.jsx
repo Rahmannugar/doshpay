@@ -17,7 +17,7 @@ const App = () => {
     <div>
       <Navbar mulish={mulish} sofiaSans={sofiaSans} />
       <Hero mulish={mulish} dmSans={dmSans} />
-      <Partner mulish={mulish} />
+      <Partner mulish={mulish} dmSans={dmSans} />
     </div>
   );
 };

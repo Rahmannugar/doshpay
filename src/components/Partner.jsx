@@ -12,7 +12,7 @@ import betway from "../assets/betway.png";
 import betking from "../assets/betking.png";
 import ibedc from "../assets/ibedc.png";
 
-const Partner = ({ mulish }) => {
+const Partner = ({ mulish, dmSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:768px)");
   const imageArray = [
     {
@@ -101,6 +101,29 @@ const Partner = ({ mulish }) => {
                 />
               </div>
             ))}
+          </div>
+
+          <div className="px-10 xl:px-16 mt-48">
+            <div className="flex flex-col">
+              <h1
+                style={mulish}
+                className="xl:text-[48px] text-4xl max-w-[563px] font-extrabold leading-[64px] text-[#111]"
+              >
+                Experience the Freedom and Convenience
+              </h1>
+              <p
+                className="max-w-[550px] font-medium text-lg leading-6"
+                style={{
+                  fontFamily: dmSans,
+                  color: "rgba(17, 17, 17, 0.72)",
+                }}
+              >
+                Doshpay is designed to put financial control in the palm of your
+                hand. With a user-friendly interface and robust security
+                measures, you can trust that your personal information and
+                transactions are safe and protected.
+              </p>
+            </div>
           </div>
         </div>
       ) : (
