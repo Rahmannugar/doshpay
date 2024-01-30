@@ -84,7 +84,7 @@ const Partner = ({ mulish, dmSans }) => {
     padding: "1px 26px 1px 0px",
   };
   return (
-    <div>
+    <div className="bg-[#f8f7f7d8]">
       {isNonMobileScreens ? (
         <div style={mulish} className="py-20">
           <h1 className="text-4xl font-bold text-center">
@@ -103,14 +103,14 @@ const Partner = ({ mulish, dmSans }) => {
                 <img
                   id={image.id}
                   src={image.url}
-                  className="rounded-[52px] object-cover  w-[52px] h-[52px]"
+                  className="rounded-[52px] object-cover w-[52px] h-[52px]"
                   alt={image.url}
                 />
               </div>
             ))}
           </div>
 
-          <div className="px-10 xl:px-16 mt-48">
+          <div className="px-10 xl:px-16 mt-48 flex">
             <div className="flex flex-col">
               <h1
                 style={mulish}
@@ -119,7 +119,7 @@ const Partner = ({ mulish, dmSans }) => {
                 Experience the Freedom and Convenience
               </h1>
               <p
-                className="max-w-[550px] font-medium text-lg leading-6"
+                className="max-w-[550px] font-bold text-lg leading-6 mt-7"
                 style={{
                   fontFamily: dmSans,
                   color: "rgba(17, 17, 17, 0.72)",
@@ -182,12 +182,12 @@ const Partner = ({ mulish, dmSans }) => {
 
               <h1
                 style={dmSans}
-                className="font-medium leading-6 text-[#111] text-lg"
+                className="font-medium leading-6 text-[#111] text-lg mt-24"
               >
                 Follow us on
               </h1>
 
-              <div className="flex space-x-12">
+              <div className="flex space-x-12 mt-5">
                 <div className="flex items-center space-x-2">
                   <div
                     style={mulish}
@@ -274,6 +274,32 @@ const Partner = ({ mulish, dmSans }) => {
                     Instagram
                   </h1>
                 </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2">
+              <div className="w-[268px] h-[268px] rounded-[20px] bg-white">
+                <img src="" alt="" />
+                <h1></h1>
+                <p></p>
+              </div>
+
+              <div className="w-[268px] h-[268px] rounded-[20px] bg-white">
+                <img src="" alt="" />
+                <h1></h1>
+                <p></p>
+              </div>
+
+              <div className="w-[268px] h-[268px] rounded-[20px] bg-white">
+                <img src="" alt="" />
+                <h1></h1>
+                <p></p>
+              </div>
+
+              <div className="w-[268px] h-[268px] rounded-[20px] bg-red-600">
+                <img src="" alt="" />
+                <h1></h1>
+                <p></p>
               </div>
             </div>
           </div>
