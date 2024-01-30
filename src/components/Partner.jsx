@@ -17,7 +17,7 @@ import yellowFrame from "../assets/yellow-frame.png";
 import pinkFrame from "../assets/pink-frame.png";
 
 const Partner = ({ mulish, dmSans }) => {
-  const isNonMobileScreens = useMediaQuery("(min-width:768px)");
+  const isNonMobileScreens = useMediaQuery("(min-width:900px)");
   const imageArray = [
     {
       id: 0,
@@ -114,7 +114,7 @@ const Partner = ({ mulish, dmSans }) => {
             ))}
           </div>
 
-          <div className="px-10 xl:px-16 md:mt-36 lg:mt-48 flex justify-between 2xl:space-x-20 2xl:justify-center items-center">
+          <div className="px-10 xl:px-16 md:mt-36 lg:mt-48 flex justify-between space-x-10 2xl:space-x-20 2xl:justify-center items-center">
             <div className="flex flex-col">
               <h1
                 style={mulish}
@@ -281,109 +281,113 @@ const Partner = ({ mulish, dmSans }) => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2">
-              <div
-                style={dmSans}
-                className="w-[268px] h-[268px] space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
-              >
-                <img
-                  src={blueFrame}
-                  alt="blueFrame"
-                  className="w-[80px] h-[80px]"
-                />
-                <h1
-                  style={mulish}
-                  className="max-w-[180px] text-[#111] text-lg font-extrabold leading-6"
+            <div className="">
+              <div className="flex items-center justify-center space-x-4 lg:px-5 ">
+                <div
+                  style={dmSans}
+                  className="md:w-[250px] md:h-[250px] lg:w-[268px] lg:h-[268px] md:px-5 lg:px-0 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
-                  Fast and Secure Cash Transfer
-                </h1>
-                <p
-                  style={{
-                    color: "rgba(17, 17, 17, 0.80)",
-                  }}
-                  className="max-w-[218px] font-semibold leading-5 text-sm"
+                  <img
+                    src={blueFrame}
+                    alt="blueFrame"
+                    className="md:w-[40px] md:h-[40px] lg:w-[80px] lg:h-[80px]"
+                  />
+                  <h1
+                    style={mulish}
+                    className="lg:max-w-[180px] text-[#111] text-sm lg:text-lg font-extrabold lg:leading-6"
+                  >
+                    Fast and Secure Cash Transfer
+                  </h1>
+                  <p
+                    style={{
+                      color: "rgba(17, 17, 17, 0.80)",
+                    }}
+                    className="lg:max-w-[218px] font-semibold lg:leading-5 text-sm"
+                  >
+                    Send money securely to any local bank around the clock with
+                    robust transactions protection.
+                  </p>
+                </div>
+
+                <div
+                  style={dmSans}
+                  className="md:w-[250px] md:h-[250px] lg:w-[268px] lg:h-[268px] md:px-5 lg:px-0 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
-                  Send money securely to any local bank around the clock with
-                  robust transactions protection.
-                </p>
+                  <img
+                    src={greenFrame}
+                    alt="greenFrame"
+                    className="md:w-[40px] md:h-[40px] lg:w-[80px] lg:h-[80px]"
+                  />
+                  <h1
+                    style={mulish}
+                    className="lg:max-w-[180px] text-[#111] text-sm lg:text-lg font-extrabold lg:leading-6"
+                  >
+                    Simplified Money Requests
+                  </h1>
+                  <p
+                    style={{
+                      color: "rgba(17, 17, 17, 0.80)",
+                    }}
+                    className="max-w-[218px] font-semibold leading-5 text-sm"
+                  >
+                    Send money securely to any local bank around the clock with
+                    robust transactions protection.
+                  </p>
+                </div>
               </div>
 
-              <div
-                style={dmSans}
-                className="w-[268px] h-[268px] space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
-              >
-                <img
-                  src={greenFrame}
-                  alt="greenFrame"
-                  className="w-[80px] h-[80px]"
-                />
-                <h1
-                  style={mulish}
-                  className="max-w-[180px] text-[#111] text-lg font-extrabold leading-6"
+              <div className="flex items-center justify-center space-x-4 lg:px-5  mt-5">
+                <div
+                  style={dmSans}
+                  className="md:w-[250px] md:h-[250px] lg:w-[268px] lg:h-[268px] md:px-5 lg:px-0 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
-                  Simplified Money Requests
-                </h1>
-                <p
-                  style={{
-                    color: "rgba(17, 17, 17, 0.80)",
-                  }}
-                  className="max-w-[218px] font-semibold leading-5 text-sm"
-                >
-                  Send money securely to any local bank around the clock with
-                  robust transactions protection.
-                </p>
-              </div>
+                  <img
+                    src={yellowFrame}
+                    alt="yellowFrame"
+                    className="md:w-[40px] md:h-[40px] lg:w-[80px] lg:h-[80px]"
+                  />
+                  <h1
+                    style={mulish}
+                    className="lg:max-w-[165px] text-[#111] text-sm lg:text-lg font-extrabold lg:leading-6"
+                  >
+                    All Your Bills in One Place
+                  </h1>
+                  <p
+                    style={{
+                      color: "rgba(17, 17, 17, 0.80)",
+                    }}
+                    className="max-w-[218px] font-semibold leading-5 text-sm"
+                  >
+                    Send money securely to any local bank around the clock with
+                    robust transactions protection.
+                  </p>
+                </div>
 
-              <div
-                style={dmSans}
-                className="w-[268px] h-[268px] space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
-              >
-                <img
-                  src={yellowFrame}
-                  alt="yellowFrame"
-                  className="w-[80px] h-[80px]"
-                />
-                <h1
-                  style={mulish}
-                  className="max-w-[165px] text-[#111] text-lg font-extrabold leading-6"
+                <div
+                  style={dmSans}
+                  className="md:w-[250px] md:h-[250px] lg:w-[268px] lg:h-[268px] md:px-5 lg:px-0 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
-                  All Your Bills in One Place
-                </h1>
-                <p
-                  style={{
-                    color: "rgba(17, 17, 17, 0.80)",
-                  }}
-                  className="max-w-[218px] font-semibold leading-5 text-sm"
-                >
-                  Send money securely to any local bank around the clock with
-                  robust transactions protection.
-                </p>
-              </div>
-
-              <div
-                style={dmSans}
-                className="w-[268px] h-[268px] space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
-              >
-                <img
-                  src={pinkFrame}
-                  alt="pinkFrame"
-                  className="w-[80px] h-[80px]"
-                />
-                <h1
-                  style={mulish}
-                  className="max-w-[180px] text-[#111] text-lg font-extrabold leading-6"
-                >
-                  Multiple Payment Options
-                </h1>
-                <p
-                  style={{
-                    color: "rgba(17, 17, 17, 0.80)",
-                  }}
-                  className="max-w-[218px] font-semibold leading-5 text-sm"
-                >
-                  Send money securely to any local bank around the clock with
-                  robust transactions protection.
-                </p>
+                  <img
+                    src={pinkFrame}
+                    alt="pinkFrame"
+                    className="md:w-[40px] md:h-[40px] lg:w-[80px] lg:h-[80px]"
+                  />
+                  <h1
+                    style={mulish}
+                    className="lg:max-w-[180px] text-[#111] text-sm lg:text-lg font-extrabold lg:leading-6"
+                  >
+                    Multiple Payment Options
+                  </h1>
+                  <p
+                    style={{
+                      color: "rgba(17, 17, 17, 0.80)",
+                    }}
+                    className="max-w-[218px] font-semibold leading-5 text-sm"
+                  >
+                    Send money securely to any local bank around the clock with
+                    robust transactions protection.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -580,109 +584,113 @@ const Partner = ({ mulish, dmSans }) => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 mx-auto  mt-16">
-              <div
-                style={dmSans}
-                className="w-[176px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
-              >
-                <img
-                  src={blueFrame}
-                  alt="blueFrame"
-                  className="w-[52px] h-[52px]"
-                />
-                <h1
-                  style={mulish}
-                  className="max-w-[140px] text-[#111] font-bold leading-[22px]"
+            <div className="mt-16">
+              <div className="flex items-center justify-center space-x-4 px-5 mt-5">
+                <div
+                  style={dmSans}
+                  className="w-[376px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
-                  Fast and Secure Cash Transfer
-                </h1>
-                <p
-                  style={{
-                    color: "rgba(17, 17, 17, 0.80)",
-                  }}
-                  className="max-w-[144px] font-semibold leading-5 text-sm"
+                  <img
+                    src={blueFrame}
+                    alt="blueFrame"
+                    className="w-[52px] h-[52px]"
+                  />
+                  <h1
+                    style={mulish}
+                    className="max-w-[140px] text-[#111] font-bold leading-[22px]"
+                  >
+                    Fast and Secure Cash Transfer
+                  </h1>
+                  <p
+                    style={{
+                      color: "rgba(17, 17, 17, 0.80)",
+                    }}
+                    className="max-w-[244px] font-semibold leading-5 text-sm"
+                  >
+                    Send money securely to any local bank around the clock with
+                    robust transactions protection.
+                  </p>
+                </div>
+
+                <div
+                  style={dmSans}
+                  className="w-[376px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
-                  Send money securely to any local bank around the clock with
-                  robust transactions protection.
-                </p>
+                  <img
+                    src={greenFrame}
+                    alt="greenFrame"
+                    className="w-[52px] h-[52px]"
+                  />
+                  <h1
+                    style={mulish}
+                    className="max-w-[140px] text-[#111] font-bold leading-[22px]"
+                  >
+                    Simplified Money Requests
+                  </h1>
+                  <p
+                    style={{
+                      color: "rgba(17, 17, 17, 0.80)",
+                    }}
+                    className="max-w-[244px] font-semibold leading-5 text-sm"
+                  >
+                    Send money securely to any local bank around the clock with
+                    robust transactions protection.
+                  </p>
+                </div>
               </div>
 
-              <div
-                style={dmSans}
-                className="w-[176px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
-              >
-                <img
-                  src={greenFrame}
-                  alt="greenFrame"
-                  className="w-[52px] h-[52px]"
-                />
-                <h1
-                  style={mulish}
-                  className="max-w-[140px] text-[#111] font-bold leading-[22px]"
+              <div className="flex items-center justify-center space-x-4 px-5  mt-5">
+                <div
+                  style={dmSans}
+                  className="w-[376px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
-                  Simplified Money Requests
-                </h1>
-                <p
-                  style={{
-                    color: "rgba(17, 17, 17, 0.80)",
-                  }}
-                  className="max-w-[144px] font-semibold leading-5 text-sm"
-                >
-                  Send money securely to any local bank around the clock with
-                  robust transactions protection.
-                </p>
-              </div>
+                  <img
+                    src={yellowFrame}
+                    alt="yellowFrame"
+                    className="w-[52px] h-[52px]"
+                  />
+                  <h1
+                    style={mulish}
+                    className="max-w-[244px] text-[#111] font-bold leading-[22px]"
+                  >
+                    All Your Bills in One Place
+                  </h1>
+                  <p
+                    style={{
+                      color: "rgba(17, 17, 17, 0.80)",
+                    }}
+                    className="max-w-[244px] font-semibold leading-5 text-sm"
+                  >
+                    Send money securely to any local bank around the clock with
+                    robust transactions protection.
+                  </p>
+                </div>
 
-              <div
-                style={dmSans}
-                className="w-[176px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
-              >
-                <img
-                  src={yellowFrame}
-                  alt="yellowFrame"
-                  className="w-[52px] h-[52px]"
-                />
-                <h1
-                  style={mulish}
-                  className="max-w-[144px] text-[#111] font-bold leading-[22px]"
+                <div
+                  style={dmSans}
+                  className="w-[376px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
-                  All Your Bills in One Place
-                </h1>
-                <p
-                  style={{
-                    color: "rgba(17, 17, 17, 0.80)",
-                  }}
-                  className="max-w-[144px] font-semibold leading-5 text-sm"
-                >
-                  Send money securely to any local bank around the clock with
-                  robust transactions protection.
-                </p>
-              </div>
-
-              <div
-                style={dmSans}
-                className="w-[176px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
-              >
-                <img
-                  src={pinkFrame}
-                  alt="pinkFrame"
-                  className="w-[52px] h-[52px]"
-                />
-                <h1
-                  style={mulish}
-                  className="max-w-[144px] text-[#111] font-bold leading-[22px]"
-                >
-                  Multiple Payment Options
-                </h1>
-                <p
-                  style={{
-                    color: "rgba(17, 17, 17, 0.80)",
-                  }}
-                  className="max-w-[144px] font-semibold leading-5 text-sm"
-                >
-                  Send money securely to any local bank around the clock with
-                  robust transactions protection.
-                </p>
+                  <img
+                    src={pinkFrame}
+                    alt="pinkFrame"
+                    className="w-[52px] h-[52px]"
+                  />
+                  <h1
+                    style={mulish}
+                    className="max-w-[244px] text-[#111] font-bold leading-[22px]"
+                  >
+                    Multiple Payment Options
+                  </h1>
+                  <p
+                    style={{
+                      color: "rgba(17, 17, 17, 0.80)",
+                    }}
+                    className="max-w-[244px] font-semibold leading-5 text-sm"
+                  >
+                    Send money securely to any local bank around the clock with
+                    robust transactions protection.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
