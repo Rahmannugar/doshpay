@@ -114,16 +114,16 @@ const Partner = ({ mulish, dmSans }) => {
             ))}
           </div>
 
-          <div className="px-10 xl:px-16 md:mt-36 lg:mt-48 flex 2xl:justify-center 2xl:items-center">
+          <div className="px-10 xl:px-16 md:mt-36 lg:mt-48 flex justify-between 2xl:space-x-20 2xl:justify-center items-center">
             <div className="flex flex-col">
               <h1
                 style={mulish}
-                className="xl:text-[48px] md:text-2xl lg:text-4xl md:max-w-[400px] lg:max-w-[563px] font-extrabold leading-[64px] text-[#111]"
+                className=" md:text-2xl lg:text-4xl md:max-w-[400px] lg:max-w-[450px] xl:max-w-[563px] font-extrabold leading-[64px] text-[#111]"
               >
                 Experience the Freedom and Convenience
               </h1>
               <p
-                className="lg:max-w-[550px] md:max-w-[400px] font-bold md:text-sm lg:text-lg leading-6 mt-7"
+                className="xl:max-w-[550px] md:max-w-[400px] lg:max-w-[450px] font-bold md:text-sm lg:text-lg leading-6 mt-7"
                 style={{
                   fontFamily: dmSans,
                   color: "rgba(17, 17, 17, 0.72)",
@@ -137,7 +137,7 @@ const Partner = ({ mulish, dmSans }) => {
 
               <div
                 style={partnerButtonStyle}
-                className="flex justify-center items-center h-[56px] w-[232px] gap-[10px] md:mt-10 lg:mt-16"
+                className="flex justify-center items-center h-[56px] w-[232px] gap-[10px] md:mt-10 lg:mt-14"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +186,7 @@ const Partner = ({ mulish, dmSans }) => {
 
               <h1
                 style={dmSans}
-                className="font-medium leading-6 text-[#111] text-lg md:mt-16 lg:mt-24"
+                className="font-semibold leading-6 text-[#111] text-lg md:mt-16 lg:mt-24"
               >
                 Follow us on
               </h1>
@@ -281,10 +281,10 @@ const Partner = ({ mulish, dmSans }) => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 my-3 px-10">
+            <div className="grid grid-cols-2">
               <div
                 style={dmSans}
-                className="w-[268px] h-[268px] mx-10 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
+                className="w-[268px] h-[268px] space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
               >
                 <img
                   src={blueFrame}
@@ -310,7 +310,7 @@ const Partner = ({ mulish, dmSans }) => {
 
               <div
                 style={dmSans}
-                className="w-[268px] h-[268px] mx-10 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
+                className="w-[268px] h-[268px] space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
               >
                 <img
                   src={greenFrame}
@@ -336,7 +336,7 @@ const Partner = ({ mulish, dmSans }) => {
 
               <div
                 style={dmSans}
-                className="w-[268px] h-[268px] mx-10 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
+                className="w-[268px] h-[268px] space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
               >
                 <img
                   src={yellowFrame}
@@ -362,7 +362,7 @@ const Partner = ({ mulish, dmSans }) => {
 
               <div
                 style={dmSans}
-                className="w-[268px] h-[268px] mx-10 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
+                className="w-[268px] h-[268px] space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
               >
                 <img
                   src={pinkFrame}
