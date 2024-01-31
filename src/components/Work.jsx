@@ -4,10 +4,26 @@ import { useState } from "react";
 
 const Work = ({ mulish, dmSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:900px)");
-  const [activeDiv, setActiveDiv] = useState(1);
+  const [toggle1, setToggle1] = useState(true);
+  const [toggle2, setToggle2] = useState(false);
+  const [toggle3, setToggle3] = useState(false);
 
-  const handleDivChange = (divId) => {
-    setActiveDiv(divId);
+  const handleToggle1 = () => {
+    setToggle1(!toggle1);
+    setToggle2(false);
+    setToggle3(false);
+  };
+
+  const handleToggle2 = () => {
+    setToggle1(false);
+    setToggle2(!toggle2);
+    setToggle3(false);
+  };
+
+  const handleToggle3 = () => {
+    setToggle1(false);
+    setToggle2(false);
+    setToggle3(!toggle3);
   };
 
   return (
@@ -46,11 +62,11 @@ const Work = ({ mulish, dmSans }) => {
             </div>
 
             <div>
-              <div style={dmSans} className="flex flex-col">
+              <div style={dmSans} className="flex flex-col space-y-5 mt-16">
                 <div className="flex space-x-3">
-                  {activeDiv === 1 ? (
+                  {toggle1 ? (
                     <svg
-                      onClick={() => setActiveDiv(2)}
+                      onClick={handleToggle1}
                       xmlns="http://www.w3.org/2000/svg"
                       width="36"
                       height="36"
@@ -68,7 +84,7 @@ const Work = ({ mulish, dmSans }) => {
                     </svg>
                   ) : (
                     <svg
-                      onClick={() => setActiveDiv(1)}
+                      onClick={handleToggle1}
                       xmlns="http://www.w3.org/2000/svg"
                       width="36"
                       height="36"
@@ -78,14 +94,14 @@ const Work = ({ mulish, dmSans }) => {
                       <path
                         d="M18 33C15.0333 33 12.1332 32.1203 9.66645 30.4721C7.19972 28.8238 5.27713 26.4812 4.14181 23.7403C3.0065 20.9994 2.70945 17.9834 3.28823 15.0737C3.86701 12.1639 5.29562 9.49119 7.39341 7.39341C9.49119 5.29562 12.1639 3.86701 15.0737 3.28823C17.9834 2.70945 20.9994 3.0065 23.7403 4.14181C26.4812 5.27713 28.8238 7.19972 30.4721 9.66645C32.1203 12.1332 33 15.0333 33 18C33 21.9783 31.4197 25.7936 28.6066 28.6066C25.7936 31.4197 21.9783 33 18 33ZM18 6.00001C15.6266 6.00001 13.3066 6.70379 11.3332 8.02237C9.35977 9.34095 7.8217 11.2151 6.91345 13.4078C6.0052 15.6005 5.76756 18.0133 6.23058 20.3411C6.69361 22.6689 7.8365 24.8071 9.51473 26.4853C11.193 28.1635 13.3312 29.3064 15.6589 29.7694C17.9867 30.2325 20.3995 29.9948 22.5922 29.0866C24.7849 28.1783 26.6591 26.6402 27.9776 24.6669C29.2962 22.6935 30 20.3734 30 18C30 14.8174 28.7357 11.7652 26.4853 9.51473C24.2349 7.26429 21.1826 6.00001 18 6.00001Z"
                         fill="#111111"
-                        fillOpacity="0.5"
+                        fill-opacity="0.5"
                       />
                     </svg>
                   )}
                   <h1
                     style={mulish}
                     className={`text-2xl max-w-[516px] font-semibold ${
-                      activeDiv === 1
+                      toggle1
                         ? "text-black"
                         : "text-neutral-900 text-opacity-50"
                     }`}
@@ -95,9 +111,7 @@ const Work = ({ mulish, dmSans }) => {
                 </div>
                 <p
                   className={`max-w-[516px] leading-6 px-10 ${
-                    activeDiv === 1
-                      ? "text-black"
-                      : "text-neutral-900 text-opacity-50"
+                    toggle1 ? "text-black" : "text-neutral-900 text-opacity-50"
                   }`}
                 >
                   The Doshpay app is available on both App store for IOS and
@@ -105,26 +119,11 @@ const Work = ({ mulish, dmSans }) => {
                 </p>
               </div>
 
-              <div style={dmSans} className="flex flex-col">
+              <div style={dmSans} className="flex flex-col space-y-5 mt-16">
                 <div className="flex space-x-3">
-                  {toggle ? (
+                  {toggle2 ? (
                     <svg
-                      onClick={() => setToggle(!toggle)}
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="36"
-                      height="36"
-                      viewBox="0 0 36 36"
-                      fill="none"
-                    >
-                      <path
-                        d="M18 33C15.0333 33 12.1332 32.1203 9.66645 30.4721C7.19972 28.8238 5.27713 26.4812 4.14181 23.7403C3.0065 20.9994 2.70945 17.9834 3.28823 15.0737C3.86701 12.1639 5.29562 9.49119 7.39341 7.39341C9.49119 5.29562 12.1639 3.86701 15.0737 3.28823C17.9834 2.70945 20.9994 3.0065 23.7403 4.14181C26.4812 5.27713 28.8238 7.19972 30.4721 9.66645C32.1203 12.1332 33 15.0333 33 18C33 21.9783 31.4197 25.7936 28.6066 28.6066C25.7936 31.4197 21.9783 33 18 33ZM18 6.00001C15.6266 6.00001 13.3066 6.70379 11.3332 8.02237C9.35977 9.34095 7.8217 11.2151 6.91345 13.4078C6.0052 15.6005 5.76756 18.0133 6.23058 20.3411C6.69361 22.6689 7.8365 24.8071 9.51473 26.4853C11.193 28.1635 13.3312 29.3064 15.6589 29.7694C17.9867 30.2325 20.3995 29.9948 22.5922 29.0866C24.7849 28.1783 26.6591 26.6402 27.9776 24.6669C29.2962 22.6935 30 20.3734 30 18C30 14.8174 28.7357 11.7652 26.4853 9.51473C24.2349 7.26429 21.1826 6.00001 18 6.00001Z"
-                        fill="#111111"
-                        fillOpacity="0.5"
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      onClick={() => setToggle(!toggle)}
+                      onClick={handleToggle2}
                       xmlns="http://www.w3.org/2000/svg"
                       width="36"
                       height="36"
@@ -140,11 +139,28 @@ const Work = ({ mulish, dmSans }) => {
                         fill="#5528E2"
                       />
                     </svg>
+                  ) : (
+                    <svg
+                      onClick={handleToggle2}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                    >
+                      <path
+                        d="M18 33C15.0333 33 12.1332 32.1203 9.66645 30.4721C7.19972 28.8238 5.27713 26.4812 4.14181 23.7403C3.0065 20.9994 2.70945 17.9834 3.28823 15.0737C3.86701 12.1639 5.29562 9.49119 7.39341 7.39341C9.49119 5.29562 12.1639 3.86701 15.0737 3.28823C17.9834 2.70945 20.9994 3.0065 23.7403 4.14181C26.4812 5.27713 28.8238 7.19972 30.4721 9.66645C32.1203 12.1332 33 15.0333 33 18C33 21.9783 31.4197 25.7936 28.6066 28.6066C25.7936 31.4197 21.9783 33 18 33ZM18 6.00001C15.6266 6.00001 13.3066 6.70379 11.3332 8.02237C9.35977 9.34095 7.8217 11.2151 6.91345 13.4078C6.0052 15.6005 5.76756 18.0133 6.23058 20.3411C6.69361 22.6689 7.8365 24.8071 9.51473 26.4853C11.193 28.1635 13.3312 29.3064 15.6589 29.7694C17.9867 30.2325 20.3995 29.9948 22.5922 29.0866C24.7849 28.1783 26.6591 26.6402 27.9776 24.6669C29.2962 22.6935 30 20.3734 30 18C30 14.8174 28.7357 11.7652 26.4853 9.51473C24.2349 7.26429 21.1826 6.00001 18 6.00001Z"
+                        fill="#111111"
+                        fill-opacity="0.5"
+                      />
+                    </svg>
                   )}
                   <h1
                     style={mulish}
                     className={`text-2xl max-w-[516px] font-semibold ${
-                      toggle ? "text-black" : "text-neutral-900 text-opacity-50"
+                      toggle2
+                        ? "text-black"
+                        : "text-neutral-900 text-opacity-50"
                     }`}
                   >
                     Fast and Secure Transfers
@@ -152,7 +168,7 @@ const Work = ({ mulish, dmSans }) => {
                 </div>
                 <p
                   className={`max-w-[516px] leading-6 px-10 ${
-                    toggle ? "text-black" : "text-neutral-900 text-opacity-50"
+                    toggle2 ? "text-black" : "text-neutral-900 text-opacity-50"
                   }`}
                 >
                   - Select "Send Money" on the wallet page. <br />- Choose how
@@ -162,26 +178,11 @@ const Work = ({ mulish, dmSans }) => {
                 </p>
               </div>
 
-              <div style={dmSans} className="flex flex-col">
+              <div style={dmSans} className="flex flex-col space-y-5 mt-16">
                 <div className="flex space-x-3">
-                  {toggle ? (
+                  {toggle3 ? (
                     <svg
-                      onClick={() => setToggle(!toggle)}
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="36"
-                      height="36"
-                      viewBox="0 0 36 36"
-                      fill="none"
-                    >
-                      <path
-                        d="M18 33C15.0333 33 12.1332 32.1203 9.66645 30.4721C7.19972 28.8238 5.27713 26.4812 4.14181 23.7403C3.0065 20.9994 2.70945 17.9834 3.28823 15.0737C3.86701 12.1639 5.29562 9.49119 7.39341 7.39341C9.49119 5.29562 12.1639 3.86701 15.0737 3.28823C17.9834 2.70945 20.9994 3.0065 23.7403 4.14181C26.4812 5.27713 28.8238 7.19972 30.4721 9.66645C32.1203 12.1332 33 15.0333 33 18C33 21.9783 31.4197 25.7936 28.6066 28.6066C25.7936 31.4197 21.9783 33 18 33ZM18 6.00001C15.6266 6.00001 13.3066 6.70379 11.3332 8.02237C9.35977 9.34095 7.8217 11.2151 6.91345 13.4078C6.0052 15.6005 5.76756 18.0133 6.23058 20.3411C6.69361 22.6689 7.8365 24.8071 9.51473 26.4853C11.193 28.1635 13.3312 29.3064 15.6589 29.7694C17.9867 30.2325 20.3995 29.9948 22.5922 29.0866C24.7849 28.1783 26.6591 26.6402 27.9776 24.6669C29.2962 22.6935 30 20.3734 30 18C30 14.8174 28.7357 11.7652 26.4853 9.51473C24.2349 7.26429 21.1826 6.00001 18 6.00001Z"
-                        fill="#111111"
-                        fillOpacity="0.5"
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      onClick={() => setToggle(!toggle)}
+                      onClick={handleToggle3}
                       xmlns="http://www.w3.org/2000/svg"
                       width="36"
                       height="36"
@@ -197,11 +198,28 @@ const Work = ({ mulish, dmSans }) => {
                         fill="#5528E2"
                       />
                     </svg>
+                  ) : (
+                    <svg
+                      onClick={handleToggle3}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                    >
+                      <path
+                        d="M18 33C15.0333 33 12.1332 32.1203 9.66645 30.4721C7.19972 28.8238 5.27713 26.4812 4.14181 23.7403C3.0065 20.9994 2.70945 17.9834 3.28823 15.0737C3.86701 12.1639 5.29562 9.49119 7.39341 7.39341C9.49119 5.29562 12.1639 3.86701 15.0737 3.28823C17.9834 2.70945 20.9994 3.0065 23.7403 4.14181C26.4812 5.27713 28.8238 7.19972 30.4721 9.66645C32.1203 12.1332 33 15.0333 33 18C33 21.9783 31.4197 25.7936 28.6066 28.6066C25.7936 31.4197 21.9783 33 18 33ZM18 6.00001C15.6266 6.00001 13.3066 6.70379 11.3332 8.02237C9.35977 9.34095 7.8217 11.2151 6.91345 13.4078C6.0052 15.6005 5.76756 18.0133 6.23058 20.3411C6.69361 22.6689 7.8365 24.8071 9.51473 26.4853C11.193 28.1635 13.3312 29.3064 15.6589 29.7694C17.9867 30.2325 20.3995 29.9948 22.5922 29.0866C24.7849 28.1783 26.6591 26.6402 27.9776 24.6669C29.2962 22.6935 30 20.3734 30 18C30 14.8174 28.7357 11.7652 26.4853 9.51473C24.2349 7.26429 21.1826 6.00001 18 6.00001Z"
+                        fill="#111111"
+                        fill-opacity="0.5"
+                      />
+                    </svg>
                   )}
                   <h1
                     style={mulish}
                     className={`text-2xl max-w-[516px] font-semibold ${
-                      toggle ? "text-black" : "text-neutral-900 text-opacity-50"
+                      toggle3
+                        ? "text-black"
+                        : "text-neutral-900 text-opacity-50"
                     }`}
                   >
                     Requesting Money Simplified
@@ -209,7 +227,7 @@ const Work = ({ mulish, dmSans }) => {
                 </div>
                 <p
                   className={`max-w-[516px] leading-6 px-10 ${
-                    toggle ? "text-black" : "text-neutral-900 text-opacity-50"
+                    toggle3 ? "text-black" : "text-neutral-900 text-opacity-50"
                   }`}
                 >
                   - Choose "Request Money" on the wallet page. <br /> - Choose
