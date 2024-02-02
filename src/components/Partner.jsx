@@ -418,7 +418,7 @@ const Partner = ({ mulish, dmSans }) => {
           </div>
 
           <div className="mt-24">
-            <div className="flex flex-col px-5">
+            <div className="flex flex-col px-5 sm:px-10">
               <h1
                 style={mulish}
                 className=" text-[28px] font-extrabold leading-[38px] text-[#111]"
