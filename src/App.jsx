@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Partner from "./components/Partner";
 import Work from "./components/Work";
+import Review from "./components/Review";
 
 const App = () => {
   const mulish = {
@@ -20,6 +21,7 @@ const App = () => {
       <Hero mulish={mulish} dmSans={dmSans} />
       <Partner mulish={mulish} dmSans={dmSans} />
       <Work mulish={mulish} dmSans={dmSans} />
+      <Review mulish={mulish} dmSans={dmSans} />
     </div>
   );
 };
