@@ -494,7 +494,7 @@ const Partner = ({ mulish, dmSans }) => {
                 Follow us on
               </h1>
 
-              <div className="flex space-x-5 mt-5">
+              <div className="flex space-x-3 mt-5">
                 <div className="flex items-center space-x-2">
                   <div
                     style={mulish}

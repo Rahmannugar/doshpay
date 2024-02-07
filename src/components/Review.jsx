@@ -306,10 +306,7 @@ const Review = ({ mulish, dmSans }) => {
           </div>
         </div>
       ) : (
-        <div
-          onTouchMove={handleMove}
-          className="bg-[#121621] mt-24 py-14 px-5 relative overflow-hidden"
-        >
+        <div className="bg-[#121621] mt-24 py-14 px-5 relative overflow-hidden">
           <div style={mobileMiddleDivStyle}></div>
           <div style={mobileLeftDivStyle}></div>
 
