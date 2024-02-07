@@ -55,15 +55,37 @@ const Review = ({ mulish, dmSans }) => {
     background: "#5EC4F0",
     filter: "blur(70px)",
   };
+
+  const mobileMiddleDivStyle = {
+    position: "absolute",
+    width: "280px",
+    height: "280px",
+    background:
+      "linear-gradient(128.14deg, rgba(146, 227, 169, 0.65) 22.59%, rgba(245, 174, 35, 0.36) 47.12%, #5D87E1 72.17%)",
+    filter: "blur(290px)",
+    left: "calc(50% - 280px/2)",
+    top: "calc(50% - 280px/2 - 7.5px)",
+  };
+
+  const mobileLeftDivStyle = {
+    position: "absolute",
+    width: "72px",
+    height: "72px",
+    left: "20px",
+    top: "260px",
+    background: "#5EC4F0",
+    filter: "blur(70px)",
+  };
+
   return (
     <div>
       {isNonMobileScreens ? (
         <div
           onMouseMove={handleMove}
           onTouchMove={handleMove}
-          className="mt-24 bg-[#121621] relative overflow-hidden  px-10 xl:px-16 py-24"
+          className="mt-24 bg-[#121621] relative overflow-hidden px-10 xl:px-16 py-24"
         >
-          <div className="" style={middleDivStyle}></div>
+          <div style={middleDivStyle}></div>
           <div style={leftDivStyle}></div>
           <div className="flex items-center space-x-3">
             <h1 style={dmSans} className="text-white text-opacity-60">
@@ -284,7 +306,233 @@ const Review = ({ mulish, dmSans }) => {
           </div>
         </div>
       ) : (
-        <div></div>
+        <div
+          onMouseMove={handleMove}
+          
+          onTouchMove={handleMove}
+          className="bg-[#121621] mt-24 py-14 px-5 relative overflow-hidden"
+        >
+          <div style={mobileMiddleDivStyle}></div>
+          <div style={mobileLeftDivStyle}></div>
+
+          <div className="flex items-center space-x-3">
+            <h1 style={dmSans} className="text-white text-opacity-60">
+              REVIEWS
+            </h1>
+            <h1> ⭐⭐⭐</h1>
+          </div>
+          <h1
+            style={mulish}
+            className="text-white font-extrabold mt-5 text-[28px] leading-[35px]"
+          >
+            What Our Esteemed Customers Are Saying
+          </h1>
+
+          <div
+            className="flex transition-transform duration-500 ease-in-out space-x-5 xl:space-x-7 mt-20"
+            style={{
+              transform: `translateX(${offset}px)`,
+              transition: "transform 0.5s ease-in-out",
+            }}
+          >
+            <div
+              className="h-[246px] w-[320px] relative flex-shrink-0 px-5 py-5 space-y-4 rounded-[20px] z-10"
+              style={{
+                background: "rgba(255, 255, 255, 0.2)",
+                boxShadow: "0px 32px 50px rgba(0, 0, 0, 0.12)",
+                border: "2px solid #FFFFFF",
+                mixBlendMode: "screen",
+              }}
+            >
+              <p
+                style={dmSans}
+                className="text-white font-medium max-w-[388px] leading-[22px]"
+              >
+                The flexibility of payment options is fantastic. Whether I need
+                to transfer to a bank or pay a friend with a username, Doshpay
+                has me covered."
+              </p>
+              <h1>⭐⭐⭐⭐⭐</h1>
+              <img
+                src={Review1}
+                alt="Review1"
+                className="rounded-full w-[52px] h-[52px] border-[1px] absolute right-5 object-cover"
+              />
+            </div>
+            <div
+              className="h-[246px] w-[320px] relative flex-shrink-0 px-5 py-5 rounded-[20px] z-10"
+              style={{
+                background: "rgba(255, 255, 255, 0.2)",
+                boxShadow: "0px 32px 50px rgba(0, 0, 0, 0.12)",
+                border: "2px solid #FFFFFF",
+              }}
+            >
+              <div className="space-y-10 mb-4">
+                <p
+                  style={dmSans}
+                  className="text-white font-medium max-w-[388px] leading-[22px]"
+                >
+                  "I love how Doshpay keeps all my bills in one place. No more
+                  juggling multiple apps. It's a game-changer!"
+                </p>
+                <h1>⭐⭐⭐⭐⭐</h1>
+              </div>
+              <img
+                src={Review2}
+                alt="Review2"
+                className="rounded-full w-[52px] h-[52px] border-[1px] absolute right-5 object-contain"
+              />
+            </div>
+            <div
+              className="h-[246px] w-[320px] relative flex-shrink-0 px-5 py-5 space-y-4 rounded-[20px] z-10"
+              style={{
+                background: "rgba(255, 255, 255, 0.2)",
+                boxShadow: "0px 32px 50px rgba(0, 0, 0, 0.12)",
+                border: "2px solid #FFFFFF",
+              }}
+            >
+              <p
+                style={dmSans}
+                className="text-white font-medium max-w-[388px] leading-[22px]"
+              >
+                "Doshpay has revolutionized the way I manage my finances. Fast
+                transfers and user-friendly money requests make my life so much
+                easier!"
+              </p>
+              <h1>⭐⭐⭐⭐⭐</h1>
+              <img
+                src={Review3}
+                alt="Review3"
+                className="rounded-full w-[52px] h-[52px] border-[1px] absolute right-5 object-cover"
+              />
+            </div>
+
+            <div
+              className="h-[246px] w-[320px] relative flex-shrink-0 px-5 py-5 space-y-4 rounded-[20px] z-10"
+              style={{
+                background: "rgba(255, 255, 255, 0.2)",
+                boxShadow: "0px 32px 50px rgba(0, 0, 0, 0.12)",
+                border: "2px solid #FFFFFF",
+                mixBlendMode: "screen",
+              }}
+            >
+              <p
+                style={dmSans}
+                className="text-white font-medium max-w-[388px] leading-[22px]"
+              >
+                The flexibility of payment options is fantastic. Whether I need
+                to transfer to a bank or pay a friend with a username, Doshpay
+                has me covered."
+              </p>
+              <h1>⭐⭐⭐⭐⭐</h1>
+              <img
+                src={Review1}
+                alt="Review1"
+                className="rounded-full w-[52px] h-[52px] border-[1px] absolute right-5 object-cover"
+              />
+            </div>
+            <div
+              className="h-[246px] w-[320px] relative flex-shrink-0 px-5 py-5 rounded-[20px] z-10"
+              style={{
+                background: "rgba(255, 255, 255, 0.2)",
+                boxShadow: "0px 32px 50px rgba(0, 0, 0, 0.12)",
+                border: "2px solid #FFFFFF",
+              }}
+            >
+              <div className="space-y-10 mb-4">
+                <p
+                  style={dmSans}
+                  className="text-white font-medium max-w-[388px] leading-[22px]"
+                >
+                  "I love how Doshpay keeps all my bills in one place. No more
+                  juggling multiple apps. It's a game-changer!"
+                </p>
+                <h1>⭐⭐⭐⭐⭐</h1>
+              </div>
+              <img
+                src={Review2}
+                alt="Review2"
+                className="rounded-full w-[52px] h-[52px] border-[1px] absolute right-5 object-contain"
+              />
+            </div>
+            <div
+              className="h-[246px] w-[320px] relative flex-shrink-0 px-5 py-5 space-y-4 rounded-[20px] z-10"
+              style={{
+                background: "rgba(255, 255, 255, 0.2)",
+                boxShadow: "0px 32px 50px rgba(0, 0, 0, 0.12)",
+                border: "2px solid #FFFFFF",
+              }}
+            >
+              <p
+                style={dmSans}
+                className="text-white font-medium max-w-[388px] leading-[22px]"
+              >
+                "Doshpay has revolutionized the way I manage my finances. Fast
+                transfers and user-friendly money requests make my life so much
+                easier!"
+              </p>
+              <h1>⭐⭐⭐⭐⭐</h1>
+              <img
+                src={Review3}
+                alt="Review3"
+                className="rounded-full w-[52px] h-[52px] border-[1px] absolute right-5 object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="flex items-center justify-end px-2 space-x-7 mt-16">
+            {/* left slider */}
+            <div onClick={handleSlideLeft}>
+              <svg
+                width="64"
+                height="36"
+                viewBox="0 0 64 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="63"
+                  height="35"
+                  rx="7.5"
+                  stroke="#5D32E3"
+                />
+                <g opacity="0.6">
+                  <path
+                    d="M27.8291 16.9998H40.0011V18.9998H27.8291L33.1931 24.3638L31.7791 25.7778L24.0011 17.9998L31.7791 10.2218L33.1931 11.6358L27.8291 16.9998Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            {/* right slider */}
+            <div onClick={handleSlideRight}>
+              <svg
+                width="64"
+                height="36"
+                viewBox="0 0 64 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="63"
+                  height="35"
+                  rx="7.5"
+                  fill="#5D32E3"
+                  stroke="#5D32E3"
+                />
+                <path
+                  d="M36.1709 16.9998H23.9989V18.9998H36.1709L30.8069 24.3638L32.2209 25.7778L39.9989 17.9998L32.2209 10.2218L30.8069 11.6358L36.1709 16.9998Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
