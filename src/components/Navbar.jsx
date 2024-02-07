@@ -8,7 +8,7 @@ const Navbar = ({ mulish, sofiaSans }) => {
   };
 
   return (
-    <nav className="fixed z-40 md:relative w-full h-24 lg:h-28 bg-[#1a1a29]">
+    <nav className="fixed z-40 md:relative w-full h-20 md:h-24 lg:h-28 bg-[#1a1a29]">
       <div className="flex justify-between items-center h-full w-full px-4 lg:px-10 xl:px-16">
         <a href="/" className="flex justify-center items-center space-x-2">
           <svg

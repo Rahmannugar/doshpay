@@ -288,6 +288,7 @@ const Hero = ({ dmSans, mulish }) => {
               className="flex justify-center items-center mx-auto h-[56px] w-[232px] gap-[10px] mt-7"
             >
               <svg
+                className="z-20"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -301,6 +302,7 @@ const Hero = ({ dmSans, mulish }) => {
               </svg>
 
               <svg
+                className="z-20"
                 xmlns="http://www.w3.org/2000/svg"
                 width="2"
                 height="30"
@@ -315,6 +317,7 @@ const Hero = ({ dmSans, mulish }) => {
               </svg>
 
               <svg
+                className="z-20"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -327,7 +330,7 @@ const Hero = ({ dmSans, mulish }) => {
                 />
               </svg>
 
-              <h1 style={mulish} className="text-sm font-bold text-white">
+              <h1 style={mulish} className="text-sm z-20 font-bold text-white">
                 Download App
               </h1>
             </div>
