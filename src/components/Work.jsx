@@ -71,6 +71,7 @@ const Work = ({ mulish, dmSans }) => {
             <div>
               <div
                 style={dmSans}
+                onClick={handleToggle1}
                 className="flex flex-col md:space-y-2 xl:space-y-5 md:mt-7 xl:mt-10"
               >
                 <div className="flex space-x-4">
@@ -132,6 +133,7 @@ const Work = ({ mulish, dmSans }) => {
 
               <div
                 style={dmSans}
+                onClick={handleToggle2}
                 className="flex flex-col md:space-y-2 xl:space-y-5 md:mt-7 xl:mt-10"
               >
                 <div className="flex space-x-4 items-center">
@@ -194,6 +196,7 @@ const Work = ({ mulish, dmSans }) => {
 
               <div
                 style={dmSans}
+                onClick={handleToggle3}
                 className="flex flex-col md:space-y-2 xl:space-y-5 md:mt-7 xl:mt-10"
               >
                 <div className="flex space-x-4 items-center">
@@ -343,6 +346,7 @@ const Work = ({ mulish, dmSans }) => {
               <div className="mt-16 sm:mt-0 flex flex-col justify-center items-center">
                 <div
                   style={dmSans}
+                  onClick={handleToggle1}
                   className="flex flex-col sm:mt-7 sm:space-y-3 space-y-4 px-5"
                 >
                   <div className="flex space-x-5">
@@ -406,6 +410,7 @@ const Work = ({ mulish, dmSans }) => {
 
                 <div
                   style={dmSans}
+                  onClick={handleToggle2}
                   className="flex flex-col mt-10 sm:mt-7 sm:space-y-3 space-y-4 px-5"
                 >
                   <div className="flex space-x-5 items-center">
@@ -472,6 +477,7 @@ const Work = ({ mulish, dmSans }) => {
 
                 <div
                   style={dmSans}
+                  onClick={handleToggle3}
                   className="flex flex-col mt-10 sm:mt-7 sm:space-y-3 space-y-4 px-5"
                 >
                   <div className="flex space-x-5 items-center">

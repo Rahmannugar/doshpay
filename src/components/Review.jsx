@@ -307,8 +307,6 @@ const Review = ({ mulish, dmSans }) => {
         </div>
       ) : (
         <div
-          onMouseMove={handleMove}
-          
           onTouchMove={handleMove}
           className="bg-[#121621] mt-24 py-14 px-5 relative overflow-hidden"
         >
