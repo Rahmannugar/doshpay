@@ -88,7 +88,7 @@ const Partner = ({ mulish, dmSans }) => {
     padding: "1px 26px 1px 0px",
   };
   return (
-    <div className="bg-[#f8f7f7d8]">
+    <div className="bg-[#f8f7f7d8] overflow-hidden">
       {isNonMobileScreens ? (
         <div style={mulish} className="py-20">
           <h1 className="text-4xl font-bold text-center">
