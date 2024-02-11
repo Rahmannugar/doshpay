@@ -194,7 +194,7 @@ const Store = ({ mulish, dmSans }) => {
             <div className="bottom-0" style={firstRightSideStyle}></div>
 
             <div className="flex justify-between px-10 space-x-5 xl:px-16 2xl:justify-center">
-              <div className="text-white z-10 py-20">
+              <div className="text-white z-10 py-16">
                 <h1
                   className="font-bold text-2xl leading-[30px] xl:text-[40px] xl:leading-[50px] lg:text-3xl lg:leading-[30px]"
                   style={mulish}
@@ -203,7 +203,7 @@ const Store = ({ mulish, dmSans }) => {
                 </h1>
                 <ul
                   style={dmSans}
-                  className="list-disc mt-7 max-w-[400px] lg:max-w-[500px] lg:text-lg space-y-2 xl:max-w-[600px]"
+                  className="list-disc xl:mt-5 lg:mt-10 mt-8 max-w-[400px] lg:max-w-[500px] lg:text-lg space-y-2 xl:max-w-[600px]"
                 >
                   <li>
                     Share the Wealth: Refer friends and family to Doshpay and
@@ -214,6 +214,26 @@ const Store = ({ mulish, dmSans }) => {
                     you can earn.
                   </li>
                 </ul>
+                <div className="flex items-center space-x-3 mt-10 lg:mt-16 xl:mt-7">
+                  <h1
+                    style={dmSans}
+                    className="font-bold text-sm leading-[18px]"
+                  >
+                    Learn more
+                  </h1>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.172 10.9998H4V12.9998H16.172L10.808 18.3638L12.222 19.7778L20 11.9998L12.222 4.22183L10.808 5.63583L16.172 10.9998Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
               </div>
 
               <div className="z-10">
@@ -363,7 +383,7 @@ const Store = ({ mulish, dmSans }) => {
               <div className="bottom-0" style={firstRightSideStyle}></div>
 
               <div className="flex justify-between sm:space-x-4 px-7 sm:px-10">
-                <div className="text-white z-10 py-12">
+                <div className="text-white z-10 py-8">
                   <h1 className="font-bold text-xl sm:text-2xl" style={mulish}>
                     Refer Friends and Earn Cashbacks
                   </h1>
@@ -380,6 +400,26 @@ const Store = ({ mulish, dmSans }) => {
                       cashbacks you can earn.
                     </li>
                   </ul>
+                  <div className="flex items-center space-x-3 mt-7">
+                    <h1
+                      style={dmSans}
+                      className="font-bold text-sm leading-[18px]"
+                    >
+                      Learn more
+                    </h1>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.172 10.9998H4V12.9998H16.172L10.808 18.3638L12.222 19.7778L20 11.9998L12.222 4.22183L10.808 5.63583L16.172 10.9998Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
                 </div>
 
                 <div className="z-10 items-center flex">
