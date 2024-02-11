@@ -6,7 +6,6 @@ import hands from "../assets/hands.png";
 
 const Store = ({ mulish, dmSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:768px)");
-  /* Ellipse 441 */
   const topCornerStyle = {
     position: "absolute",
     width: "230px",
@@ -22,6 +21,22 @@ const Store = ({ mulish, dmSans }) => {
     height: "220px",
     left: "119px",
     top: "188px",
+    background: "rgba(245, 174, 35, 0.66)",
+    filter: "blur(200px)",
+  };
+
+  const mobileTopCornerStyle = {
+    position: "absolute",
+    width: "230px",
+    height: "230px",
+    background: "linear-gradient(133.12deg, #25BB4E 33.57%, #BB259A 94.02%)",
+    filter: "blur(160px)",
+  };
+
+  const mobileBottomCornerStyle = {
+    position: "absolute",
+    width: "220px",
+    height: "220px",
     background: "rgba(245, 174, 35, 0.66)",
     filter: "blur(200px)",
   };
@@ -212,7 +227,7 @@ const Store = ({ mulish, dmSans }) => {
           </div>
         </div>
       ) : (
-        <div className="mt-20 flex flex-col justify-center items-center space-y-14">
+        <div className="mt-20 flex flex-col justify-center items-center">
           <div
             className="flex flex-col rounded-3xl relative items-center w-[350px] h-[687px]"
             style={{
@@ -264,7 +279,7 @@ const Store = ({ mulish, dmSans }) => {
           </div>
 
           <div
-            className="flex flex-col rounded-3xl relative items-center w-[350px] h-[687px]"
+            className="flex flex-col rounded-3xl relative items-center w-[350px] mt-16 h-[687px]"
             style={{
               background: "rgba(190, 207, 243, 0.8)",
             }}
@@ -314,6 +329,67 @@ const Store = ({ mulish, dmSans }) => {
 
             <div className="z-10">
               <img src={store2} alt="store2" className="mt-[88px] w-[296px]" />
+            </div>
+          </div>
+
+          <div className="px-2 sm:px-5">
+            <div
+              className="mt-28 h-[330px] overflow-hidden mx-auto max-w-[1500px] relative rounded-[20px]"
+              style={{
+                background: "rgba(57, 85, 147, 1)",
+              }}
+            >
+              <div className="absolute">
+                <svg
+                  width="1240"
+                  height="375"
+                  viewBox="0 0 1240 375"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M-52.4534 -17.0423L-38.9345 433.417M-13.2946 -18.2175L0.224335 432.241M25.8642 -19.3928L39.3832 431.066M65.0231 -20.568L78.542 429.891M104.182 -21.7432L117.701 428.716M143.341 -22.9184L156.86 427.541M182.5 -24.0936L196.019 426.365M221.658 -25.2688L235.177 425.19M260.817 -26.444L274.336 424.015M299.976 -27.6192L313.495 422.84M339.135 -28.7944L352.654 421.664M378.294 -29.9696L391.813 420.489M417.453 -31.1448L430.972 419.314M456.612 -32.3201L470.13 418.139M495.77 -33.4953L509.289 416.964M534.929 -34.6705L548.448 415.788M574.088 -35.8457L587.607 414.613M613.247 -37.0209L626.766 413.438M652.406 -38.1961L665.925 412.263M691.565 -39.3713L705.084 411.088M730.723 -40.5465L744.242 409.912M769.882 -41.7217L783.401 408.737M809.041 -42.8969L822.56 407.562M848.2 -44.0721L861.719 406.387M887.359 -45.2474L900.878 405.212M926.518 -46.4226L940.037 404.036M965.676 -47.5978L979.195 402.861M1004.84 -48.773L1018.35 401.686M1043.99 -49.9482L1057.51 400.511M1083.15 -51.1234L1096.67 399.336M1122.31 -52.2986L1135.83 398.16M1161.47 -53.4738L1174.99 396.985M1200.63 -54.649L1214.15 395.81M1239.79 -55.8242L1253.31 394.635M1278.95 -56.9994L1292.47 393.459M-34.6077 434.748L1287 395.085M-35.0083 421.401L1286.6 381.738M-35.4088 408.054L1286.2 368.391M-35.8094 394.707L1285.8 355.044M-36.21 381.36L1285.4 341.697M-36.6105 368.013L1285 328.35M-37.0111 354.666L1284.6 315.003M-37.4117 341.319L1284.2 301.656M-37.8122 327.972L1283.8 288.309M-38.2128 314.625L1283.4 274.962M-38.6133 301.279L1283 261.615M-39.0139 287.932L1282.6 248.268M-39.4145 274.585L1282.2 234.921M-39.815 261.238L1281.8 221.574M-40.2156 247.891L1281.4 208.227M-40.6161 234.544L1280.99 194.881M-41.0167 221.197L1280.59 181.534M-41.4173 207.85L1280.19 168.187M-41.8178 194.503L1279.79 154.84M-42.2184 181.156L1279.39 141.493M-42.6189 167.809L1278.99 128.146M-43.0195 154.462L1278.59 114.799M-43.4201 141.115L1278.19 101.452M-43.8206 127.768L1277.79 88.1051M-44.2212 114.422L1277.39 74.7582M-44.6217 101.075L1276.99 61.4112M-45.0223 87.7277L1276.59 48.0643M-45.4229 74.3807L1276.19 34.7174M-45.8234 61.0338L1275.79 21.3705M-46.224 47.6869L1275.39 8.02353M-46.6246 34.3399L1274.99 -5.3234M-47.0251 20.993L1274.59 -18.6703M-47.4257 7.64608L1274.19 -32.0173M-47.8262 -5.70085L1273.78 -45.3642M-48.2268 -19.0478L1273.38 -58.7111"
+                    stroke="#92E3A9"
+                    stroke-opacity="0.1"
+                  />
+                </svg>
+              </div>
+              <div className="left-0 top-0" style={mobileTopCornerStyle}></div>
+              <div
+                className="left-0 bottom-0"
+                style={mobileBottomCornerStyle}
+              ></div>
+
+              <div className="bottom-0" style={firstRightSideStyle}></div>
+
+              <div className="flex justify-between sm:space-x-4 px-7 sm:px-10">
+                <div className="text-white z-10 py-12">
+                  <h1 className="font-bold text-xl sm:text-2xl" style={mulish}>
+                    Refer Friends and Earn Cashbacks
+                  </h1>
+                  <ul
+                    style={dmSans}
+                    className="list-disc mt-3 text-sm sm:text-base max-w-[350px] space-y-2"
+                  >
+                    <li>
+                      Share the Wealth: Refer friends and family to Doshpay and
+                      both of you earn cashbacks.
+                    </li>
+                    <li>
+                      Boost Your Earnings: The more referrals, the more
+                      cashbacks you can earn.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="z-10 items-center flex">
+                  <img
+                    src={hands}
+                    alt="hands"
+                    className="w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
