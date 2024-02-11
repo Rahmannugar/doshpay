@@ -308,7 +308,7 @@ const Work = ({ mulish, dmSans }) => {
           </div>
         </div>
       ) : (
-        <div>
+        <div className="overflow-hidden">
           <div className="text-center space-y-2 mt-16" style={dmSans}>
             <h1
               style={mulish}
@@ -329,7 +329,7 @@ const Work = ({ mulish, dmSans }) => {
           <div className="sm:flex sm:justify-between sm:mt-20 px-3">
             <div className="flex justify-center items-center mt-16 sm:mt-0 mx-4">
               <div
-                className="w-[350px] sm:w-[334px] h-[493px] sm:h-[600px] flex justify-center items-center rounded-[24px] pt-12 sm:pt-10"
+                className="w-[350px] sm:w-[334px] h-[493px] sm:h-[600px] flex justify-center items-center rounded-[24px] pt-8 sm:pt-10"
                 style={{
                   background: "rgba(93, 135, 225, 0.40)",
                 }}
