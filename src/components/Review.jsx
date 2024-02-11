@@ -1,5 +1,5 @@
 import { useMediaQuery } from "@mui/material";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Review1 from "../assets/review-1.jpg";
 import Review2 from "../assets/review-2.jpg";
 import Review3 from "../assets/review-3.jpg";
@@ -9,6 +9,27 @@ const Review = ({ mulish, dmSans }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemWidth = 460;
   const numItems = 5;
+
+  const touchStartX = useRef(null);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    if (!touchStartX.current) return;
+    const touchEndX = e.touches[0].clientX;
+    const diff = touchStartX.current - touchEndX;
+    const sensitivity = 50; // Adjust this value for touch sensitivity
+    if (Math.abs(diff) >= sensitivity) {
+      if (diff > 0) {
+        handleSlideRight();
+      } else {
+        handleSlideLeft();
+      }
+      touchStartX.current = null;
+    }
+  };
 
   const handleSlideLeft = () => {
     const newIndex = (currentIndex - 1 + numItems) % numItems;
@@ -306,7 +327,11 @@ const Review = ({ mulish, dmSans }) => {
           </div>
         </div>
       ) : (
-        <div className="bg-[#121621] mt-24 py-14 px-5 relative overflow-hidden">
+        <div
+          className="bg-[#121621] mt-24 py-14 px-5 relative overflow-hidden"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+        >
           <div style={mobileMiddleDivStyle}></div>
           <div style={mobileLeftDivStyle}></div>
 
