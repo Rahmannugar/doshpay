@@ -193,17 +193,17 @@ const Store = ({ mulish, dmSans }) => {
 
             <div className="bottom-0" style={firstRightSideStyle}></div>
 
-            <div className="flex justify-between px-10 space-x-5 xl:px-16 2xl:justify-center">
-              <div className="text-white z-10 py-16">
+            <div className="flex justify-between px-10 space-x-3 xl:px-16 2xl:justify-center">
+              <div className="text-white z-10 py-16 lg:py-14 xl:py-[58px]">
                 <h1
-                  className="font-bold text-2xl leading-[30px] xl:text-[40px] xl:leading-[50px] lg:text-3xl lg:leading-[30px]"
+                  className="font-bold text-2xl leading-[30px] xl:text-[38px] xl:leading-[50px] lg:text-3xl lg:leading-[30px]"
                   style={mulish}
                 >
                   Refer Friends and Earn Cashbacks
                 </h1>
                 <ul
                   style={dmSans}
-                  className="list-disc xl:mt-5 lg:mt-10 mt-8 max-w-[400px] lg:max-w-[500px] lg:text-lg space-y-2 xl:max-w-[600px]"
+                  className="list-disc xl:mt-4 lg:mt-10 mt-8 max-w-[400px] lg:max-w-[500px] lg:text-lg space-y-2 xl:max-w-[550px]"
                 >
                   <li>
                     Share the Wealth: Refer friends and family to Doshpay and
