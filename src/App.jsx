@@ -5,6 +5,7 @@ import Partner from "./components/Partner";
 import Work from "./components/Work";
 import Review from "./components/Review";
 import Store from "./components/Store";
+import Transfer from "./components/Transfer";
 
 const App = () => {
   const mulish = {
@@ -24,6 +25,7 @@ const App = () => {
       <Work mulish={mulish} dmSans={dmSans} />
       <Review mulish={mulish} dmSans={dmSans} />
       <Store mulish={mulish} dmSans={dmSans} />
+      <Transfer mulish={mulish} dmSans={dmSans} />
     </div>
   );
 };
