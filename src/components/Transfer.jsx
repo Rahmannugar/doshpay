@@ -1,5 +1,7 @@
 import { useMediaQuery } from "@mui/material";
 import advert1 from "../assets/advert-1.png";
+import advert2 from "../assets/advert-2.png";
+import advert3 from "../assets/advert-3.png";
 
 const Transfer = ({ mulish, dmSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
@@ -33,11 +35,11 @@ const Transfer = ({ mulish, dmSans }) => {
               <div className="px-10">
                 <h1
                   style={mulish}
-                  className="font-extrabold text-2xl leading-[30px] mt-16"
+                  className="font-extrabold text-2xl leading-[30px] mt-12"
                 >
                   Fast and Secure Cash Transfer
                 </h1>
-                <p style={dmSans} className="leading-[20px] max-w-[360px] mt-4">
+                <p style={dmSans} className="leading-[20px] max-w-[360px] mt-5">
                   Send money securely to any local bank around the clock with
                   the assurance of robust encryption protecting your
                   transactions.
@@ -45,7 +47,7 @@ const Transfer = ({ mulish, dmSans }) => {
 
                 <div
                   style={transferButtonStyle}
-                  className="flex justify-center items-center h-[48px] w-[209px] gap-[5px] mt-10"
+                  className="flex justify-center items-center h-[48px] w-[209px] gap-[7px] mt-10"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +95,7 @@ const Transfer = ({ mulish, dmSans }) => {
                 </div>
               </div>
 
-              <div className="flex justify-end items-center px-3">
+              <div className="flex justify-end items-center mt-3">
                 <img src={advert1} alt="advert1" />
               </div>
             </div>
@@ -103,15 +105,47 @@ const Transfer = ({ mulish, dmSans }) => {
                 style={{
                   background: "rgba(245, 245, 245, 1)",
                 }}
-                className="w-[600px] h-[320px]"
-              ></div>
+                className="w-[600px] h-[320px] flex px-7 justify-between items-center"
+              >
+                <div className="space-y-5">
+                  <h1
+                    style={mulish}
+                    className="font-extrabold leading-[27px] max-w-[210px] text-[22px]"
+                  >
+                    Daily Financial Tips
+                  </h1>
+                  <p style={dmSans} className="leading-[20px] max-w-[210px]">
+                    Receive daily financial tips to help you make informed
+                    decisions.
+                  </p>
+                </div>
+                <img src={advert2} alt="advert2" />
+              </div>
 
               <div
                 style={{
                   background: "rgba(245, 245, 245, 1)",
                 }}
-                className="w-[600px] h-[320px]"
-              ></div>
+                className="w-[600px] h-[320px] flex px-7 justify-between items-center"
+              >
+                <div className="space-y-5">
+                  <h1
+                    style={mulish}
+                    className="font-extrabold leading-[27px] max-w-[210px] text-[22px]"
+                  >
+                    Flexible Payment Options
+                  </h1>
+                  <p style={dmSans} className="leading-[20px] max-w-[210px]">
+                    Simplify transactions by sending and receiving money using
+                    Doshpay tags.
+                  </p>
+                </div>
+                <img
+                  src={advert3}
+                  alt="advert3"
+                  className="w-[287px] mt-20"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -26,6 +26,7 @@ const App = () => {
       <Review mulish={mulish} dmSans={dmSans} />
       <Store mulish={mulish} dmSans={dmSans} />
       <Transfer mulish={mulish} dmSans={dmSans} />
+      <br />
     </div>
   );
 };
