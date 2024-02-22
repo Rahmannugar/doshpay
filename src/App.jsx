@@ -27,6 +27,7 @@ const App = () => {
       <Store mulish={mulish} dmSans={dmSans} />
       <Transfer mulish={mulish} dmSans={dmSans} />
       <br />
+      <br />
     </div>
   );
 };
