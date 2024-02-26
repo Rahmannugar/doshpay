@@ -154,12 +154,12 @@ const Transfer = ({ mulish, dmSans }) => {
             Fund your Wallet, Make Transfers, and Pay Bills with ease
           </h1>
 
-          <div className="mt-20 flex flex-col justify-center items-center">
+          <div className="mt-20 flex flex-col justify-center items-center md:flex-row md:space-x-10">
             <div
               style={{
                 background: "rgba(190, 207, 243, 0.4)",
               }}
-              className="w-[350px] h-[660px] rounded-[24px]"
+              className="w-[350px] h-[660px] md:h-[900px] flex flex-col justify-center items-center md:mt-10 rounded-[24px]"
             >
               <div className="px-5">
                 <h1
@@ -225,50 +225,52 @@ const Transfer = ({ mulish, dmSans }) => {
               </div>
 
               <div className="flex justify-end items-center mt-6">
-                <img src={advert1} alt="advert1" />
+                <img src={advert1} alt="advert1" className="" />
               </div>
             </div>
 
-            <div
-              style={{
-                background: "rgba(245, 245, 245, 1)",
-              }}
-              className="w-[350px] h-[420px] py-5 px-7 mt-10 rounded-[24px]"
-            >
-              <div className="space-y-3">
-                <h1
-                  style={mulish}
-                  className="font-extrabold max-w-[210px] text-xl"
-                >
-                  Daily Financial Tips
-                </h1>
-                <p style={dmSans} className="max-w-[210px]">
-                  Receive daily financial tips to help you make informed
-                  decisions.
-                </p>
+            <div>
+              <div
+                style={{
+                  background: "rgba(245, 245, 245, 1)",
+                }}
+                className="w-[350px] h-[440px] py-5 px-7 mt-10 rounded-[24px]"
+              >
+                <div className="space-y-3">
+                  <h1
+                    style={mulish}
+                    className="font-extrabold max-w-[210px] text-xl"
+                  >
+                    Daily Financial Tips
+                  </h1>
+                  <p style={dmSans} className="max-w-[210px]">
+                    Receive daily financial tips to help you make informed
+                    decisions.
+                  </p>
+                </div>
+                <img src={advert2} alt="advert2" className="mt-5" />
               </div>
-              <img src={advert2} alt="advert2" className="mt-5" />
-            </div>
 
-            <div
-              style={{
-                background: "rgba(245, 245, 245, 1)",
-              }}
-              className="w-[350px] h-[440px] py-5 px-7 mt-10 rounded-[24px]"
-            >
-              <div className="space-y-3">
-                <h1
-                  style={mulish}
-                  className="font-extrabold max-w-[210px] text-xl"
-                >
-                  Flexible Payment Options
-                </h1>
-                <p style={dmSans} className="max-w-[210px]">
-                  Simplify transactions by sending and receiving money using
-                  Doshpay tags.
-                </p>
+              <div
+                style={{
+                  background: "rgba(245, 245, 245, 1)",
+                }}
+                className="w-[350px] h-[440px] py-5 px-7 mt-10 rounded-[24px]"
+              >
+                <div className="space-y-3">
+                  <h1
+                    style={mulish}
+                    className="font-extrabold max-w-[210px] text-xl"
+                  >
+                    Flexible Payment Options
+                  </h1>
+                  <p style={dmSans} className="max-w-[210px]">
+                    Simplify transactions by sending and receiving money using
+                    Doshpay tags.
+                  </p>
+                </div>
+                <img src={advert3} alt="advert3" className="w-[287px] mt-7" />
               </div>
-              <img src={advert3} alt="advert3" className="w-[287px] mt-7" />
             </div>
           </div>
         </div>

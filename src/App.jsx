@@ -6,6 +6,7 @@ import Work from "./components/Work";
 import Review from "./components/Review";
 import Store from "./components/Store";
 import Transfer from "./components/Transfer";
+import Answer from "./components/Answer";
 
 const App = () => {
   const mulish = {
@@ -26,8 +27,7 @@ const App = () => {
       <Review mulish={mulish} dmSans={dmSans} />
       <Store mulish={mulish} dmSans={dmSans} />
       <Transfer mulish={mulish} dmSans={dmSans} />
-      <br />
-      <br />
+      <Answer mulish={mulish} dmSans={dmSans} />
     </div>
   );
 };
