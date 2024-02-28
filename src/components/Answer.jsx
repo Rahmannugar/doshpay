@@ -1,8 +1,37 @@
 import { useMediaQuery } from "@mui/material";
-import React from "react";
+import answers from "./defaultAnswers";
+import { useState } from "react";
 
 const Answer = ({ mulish, dmSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:768px)");
+  const [selectedAnswer, setSelectedAnswer] = useState(answers[0].answer1);
+  const [background, setBackground] = useState("bg-[#121621]");
+  const [color, setColor] = useState("");
+  const click1 = () => {
+    setSelectedAnswer(answers[0].answer1);
+  };
+  const click2 = () => {
+    setSelectedAnswer(answers[0].answer2);
+  };
+  const click3 = () => {
+    setSelectedAnswer(answers[0].answer3);
+  };
+  const click4 = () => {
+    setSelectedAnswer(answers[0].answer4);
+  };
+  const click5 = () => {
+    setSelectedAnswer(answers[0].answer5);
+  };
+  const click6 = () => {
+    setSelectedAnswer(answers[0].answer6);
+  };
+  const click7 = () => {
+    setSelectedAnswer(answers[0].answer7);
+  };
+  const click8 = () => {
+    setSelectedAnswer(answers[0].answer8);
+  };
+
   return (
     <div>
       {isNonMobileScreens ? (
@@ -48,9 +77,9 @@ const Answer = ({ mulish, dmSans }) => {
             >
               FAQs and Answers.
             </h1>
-            <div className="mt-24 px-10 xl:px-16 space-x-10 flex justify-between items-center">
+            <div className="mt-24 px-10 xl:px-16 space-x-10 flex justify-center items-center">
               <div
-                className="h-[768px] w-[600px] py-8 rounded-[24px]"
+                className=" h-[894.67px] w-[600px] py-8 rounded-[24px]"
                 style={{
                   border: "1px solid rgba(17, 17, 17, 0.2)",
                 }}
@@ -61,26 +90,150 @@ const Answer = ({ mulish, dmSans }) => {
                 >
                   Your Questions
                 </h1>
-                <div
-                  className="w-[600px] mt-5"
-                  style={{
-                    border: "1px solid rgba(17,17, 17, 0.12)",
-                  }}
-                ></div>
-                <div
-                  className="bg-[#121621] w-[544px] h-[68px] rounded-[12px]"
-                  style={{
-                    border: "1px solid rgba(93, 50, 227, 0.16)",
-                  }}
-                >
-                  <h1 style={mulish} className="text-white text-lg">
-                    What is Doshpay?
-                  </h1>
+                <div className="flex flex-col items-center ">
+                  <div
+                    className="w-[600px] mt-5"
+                    style={{
+                      border: "1px solid rgba(17,17, 17, 0.12)",
+                    }}
+                  ></div>
+                  <div
+                    onClick={click1}
+                    className="bg-[#121621] flex items-center px-5 mt-7 w-[544px] h-[68px] rounded-[12px]"
+                    style={{
+                      border: "1px solid rgba(93, 50, 227, 0.16)",
+                    }}
+                  >
+                    <h1
+                      style={mulish}
+                      className="text-white text-lg font-bold leading-[28px]"
+                    >
+                      What is Doshpay?
+                    </h1>
+                  </div>
+                  <div
+                    onClick={click2}
+                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    style={{
+                      background: "rgba(93, 50, 227, 0.03)",
+                      border: "1px solid rgba(17, 17, 17, 0.2)",
+                      color: "rgba(18, 22, 33, 0.8)",
+                    }}
+                  >
+                    <h1
+                      style={mulish}
+                      className="font-bold text-lg leading-[28px]"
+                    >
+                      How do I send cash using Doshpay?
+                    </h1>
+                  </div>
+
+                  <div
+                    onClick={click3}
+                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    style={{
+                      background: "rgba(93, 50, 227, 0.03)",
+                      border: "1px solid rgba(17, 17, 17, 0.2)",
+                      color: "rgba(18, 22, 33, 0.8)",
+                    }}
+                  >
+                    <h1
+                      style={mulish}
+                      className="font-bold text-lg leading-[28px]"
+                    >
+                      Can I request cash from friends who don't have the app?
+                    </h1>
+                  </div>
+
+                  <div
+                    onClick={click4}
+                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    style={{
+                      background: "rgba(93, 50, 227, 0.03)",
+                      border: "1px solid rgba(17, 17, 17, 0.2)",
+                      color: "rgba(18, 22, 33, 0.8)",
+                    }}
+                  >
+                    <h1
+                      style={mulish}
+                      className="font-bold text-lg leading-[28px]"
+                    >
+                      Are there any transaction fees?
+                    </h1>
+                  </div>
+
+                  <div
+                    onClick={click5}
+                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    style={{
+                      background: "rgba(93, 50, 227, 0.03)",
+                      border: "1px solid rgba(17, 17, 17, 0.2)",
+                      color: "rgba(18, 22, 33, 0.8)",
+                    }}
+                  >
+                    <h1
+                      style={mulish}
+                      className="font-bold text-lg leading-[28px]"
+                    >
+                      How do I pay my bills through Doshpay?
+                    </h1>
+                  </div>
+
+                  <div
+                    onClick={click6}
+                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    style={{
+                      background: "rgba(93, 50, 227, 0.03)",
+                      border: "1px solid rgba(17, 17, 17, 0.2)",
+                      color: "rgba(18, 22, 33, 0.8)",
+                    }}
+                  >
+                    <h1
+                      style={mulish}
+                      className="font-bold text-lg leading-[28px]"
+                    >
+                      Is Doshpay safe and secure?
+                    </h1>
+                  </div>
+
+                  <div
+                    onClick={click7}
+                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    style={{
+                      background: "rgba(93, 50, 227, 0.03)",
+                      border: "1px solid rgba(17, 17, 17, 0.2)",
+                      color: "rgba(18, 22, 33, 0.8)",
+                    }}
+                  >
+                    <h1
+                      style={mulish}
+                      className="font-bold text-lg leading-[28px]"
+                    >
+                      How do I send cash using Doshpay?
+                    </h1>
+                  </div>
+
+                  <div
+                    onClick={click8}
+                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    style={{
+                      background: "rgba(93, 50, 227, 0.03)",
+                      border: "1px solid rgba(17, 17, 17, 0.2)",
+                      color: "rgba(18, 22, 33, 0.8)",
+                    }}
+                  >
+                    <h1
+                      style={mulish}
+                      className="font-bold text-lg leading-[28px]"
+                    >
+                      What if I need help or have more questions?
+                    </h1>
+                  </div>
                 </div>
               </div>
 
               <div
-                className="h-[768px] w-[600px] rounded-[24px] py-8 bg-[#1A569E]"
+                className="h-[894.67px] w-[600px] rounded-[24px] py-8 bg-[#1A569E]"
                 style={{
                   border: "1px solid rgba(17, 17, 17, 0.2)",
                 }}
@@ -102,11 +255,7 @@ const Answer = ({ mulish, dmSans }) => {
                   style={dmSans}
                   className="px-7 mt-8 leading-[32px] text-2xl text-white"
                 >
-                  Doshpay is a cutting-edge mobile banking application designed
-                  to revolutionize the way individuals manage their finances.
-                  Our aim is to transform traditional banking by offering a
-                  user-centric, feature-rich mobile application that simplifies
-                  everyday financial transactions.
+                  {selectedAnswer}
                 </p>
               </div>
             </div>
