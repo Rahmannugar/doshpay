@@ -99,25 +99,31 @@ const Answer = ({ mulish, dmSans }) => {
                   ></div>
                   <div
                     onClick={click1}
-                    className="bg-[#121621] flex items-center px-5 mt-7 w-[544px] h-[68px] rounded-[12px]"
+                    className={` ${
+                      selectedAnswer == answers[0].answer1
+                        ? "bg-[#121621] text-white"
+                        : "bg-[#5D32E308]"
+                    } flex items-center px-5 mt-7 w-[544px] h-[68px] rounded-[12px]`}
                     style={{
                       border: "1px solid rgba(93, 50, 227, 0.16)",
                     }}
                   >
                     <h1
                       style={mulish}
-                      className="text-white text-lg font-bold leading-[28px]"
+                      className="text-lg font-bold leading-[28px]"
                     >
                       What is Doshpay?
                     </h1>
                   </div>
                   <div
                     onClick={click2}
-                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    className={` ${
+                      selectedAnswer == answers[0].answer2
+                        ? "bg-[#121621] text-white"
+                        : "bg-[#5D32E308]"
+                    } flex items-center px-5 mt-7 w-[544px] h-[68px] rounded-[12px]`}
                     style={{
-                      background: "rgba(93, 50, 227, 0.03)",
                       border: "1px solid rgba(17, 17, 17, 0.2)",
-                      color: "rgba(18, 22, 33, 0.8)",
                     }}
                   >
                     <h1
@@ -130,11 +136,13 @@ const Answer = ({ mulish, dmSans }) => {
 
                   <div
                     onClick={click3}
-                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    className={` ${
+                      selectedAnswer == answers[0].answer3
+                        ? "bg-[#121621] text-white"
+                        : "bg-[#5D32E308]"
+                    } flex items-center px-5 mt-7 w-[544px] h-[68px] rounded-[12px]`}
                     style={{
-                      background: "rgba(93, 50, 227, 0.03)",
                       border: "1px solid rgba(17, 17, 17, 0.2)",
-                      color: "rgba(18, 22, 33, 0.8)",
                     }}
                   >
                     <h1
@@ -147,11 +155,13 @@ const Answer = ({ mulish, dmSans }) => {
 
                   <div
                     onClick={click4}
-                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    className={` ${
+                      selectedAnswer == answers[0].answer4
+                        ? "bg-[#121621] text-white"
+                        : "bg-[#5D32E308]"
+                    } flex items-center px-5 mt-7 w-[544px] h-[68px] rounded-[12px]`}
                     style={{
-                      background: "rgba(93, 50, 227, 0.03)",
                       border: "1px solid rgba(17, 17, 17, 0.2)",
-                      color: "rgba(18, 22, 33, 0.8)",
                     }}
                   >
                     <h1
@@ -164,11 +174,13 @@ const Answer = ({ mulish, dmSans }) => {
 
                   <div
                     onClick={click5}
-                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    className={` ${
+                      selectedAnswer == answers[0].answer5
+                        ? "bg-[#121621] text-white"
+                        : "bg-[#5D32E308]"
+                    } flex items-center px-5 mt-7 w-[544px] h-[68px] rounded-[12px]`}
                     style={{
-                      background: "rgba(93, 50, 227, 0.03)",
                       border: "1px solid rgba(17, 17, 17, 0.2)",
-                      color: "rgba(18, 22, 33, 0.8)",
                     }}
                   >
                     <h1
@@ -181,11 +193,13 @@ const Answer = ({ mulish, dmSans }) => {
 
                   <div
                     onClick={click6}
-                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    className={` ${
+                      selectedAnswer == answers[0].answer6
+                        ? "bg-[#121621] text-white"
+                        : "bg-[#5D32E308]"
+                    } flex items-center px-5 mt-7 w-[544px] h-[68px] rounded-[12px]`}
                     style={{
-                      background: "rgba(93, 50, 227, 0.03)",
                       border: "1px solid rgba(17, 17, 17, 0.2)",
-                      color: "rgba(18, 22, 33, 0.8)",
                     }}
                   >
                     <h1
@@ -198,11 +212,13 @@ const Answer = ({ mulish, dmSans }) => {
 
                   <div
                     onClick={click7}
-                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    className={` ${
+                      selectedAnswer == answers[0].answer7
+                        ? "bg-[#121621] text-white"
+                        : "bg-[#5D32E308]"
+                    } flex items-center px-5 mt-7 w-[544px] h-[68px] rounded-[12px]`}
                     style={{
-                      background: "rgba(93, 50, 227, 0.03)",
                       border: "1px solid rgba(17, 17, 17, 0.2)",
-                      color: "rgba(18, 22, 33, 0.8)",
                     }}
                   >
                     <h1
@@ -215,11 +231,13 @@ const Answer = ({ mulish, dmSans }) => {
 
                   <div
                     onClick={click8}
-                    className="w-[544px] h-[68px] flex items-center px-5 mt-7 rounded-[24px]"
+                    className={` ${
+                      selectedAnswer == answers[0].answer8
+                        ? "bg-[#121621] text-white"
+                        : "bg-[#5D32E308]"
+                    } flex items-center px-5 mt-7 w-[544px] h-[68px] rounded-[12px]`}
                     style={{
-                      background: "rgba(93, 50, 227, 0.03)",
                       border: "1px solid rgba(17, 17, 17, 0.2)",
-                      color: "rgba(18, 22, 33, 0.8)",
                     }}
                   >
                     <h1
