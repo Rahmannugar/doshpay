@@ -7,6 +7,7 @@ import Review from "./components/Review";
 import Store from "./components/Store";
 import Transfer from "./components/Transfer";
 import Answer from "./components/Answer";
+import Footer from "./components/Footer";
 
 const App = () => {
   const mulish = {
@@ -28,6 +29,7 @@ const App = () => {
       <Store mulish={mulish} dmSans={dmSans} />
       <Transfer mulish={mulish} dmSans={dmSans} />
       <Answer mulish={mulish} dmSans={dmSans} />
+      <Footer mulish={mulish} dmSans={dmSans} />
     </div>
   );
 };
