@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "@mui/material";
 
-const Footer = ({ mulish, dmSans }) => {
+const Footer = ({ mulish, dmSans, sofiaSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
   const heroButtonStyle = {
     borderRadius: "100px",
@@ -14,7 +14,7 @@ const Footer = ({ mulish, dmSans }) => {
       {isNonMobileScreens ? (
         <div className="bg-[#121621] h-[990px] mt-[500px]">
           <div className="relative">
-            <div className="bg-[#4818DC] h-[520px] mx-auto mt-[-300px] rounded-[28px] w-screen absolute">
+            <div className="bg-[#4818DC] h-[520px] mx-auto mt-[-300px] rounded-[28px]">
               <div className="absolute bottom-0 w-full pt-40 h-full z-0">
                 <svg
                   width=""
@@ -75,7 +75,6 @@ const Footer = ({ mulish, dmSans }) => {
                     Download on App Store
                   </h1>
                 </div>
-
                 <div
                   style={heroButtonStyle}
                   className="flex justify-center items-center z-10 h-[56px] w-[262px] gap-[10px] md:mt-10 lg:mt-16"
@@ -97,6 +96,34 @@ const Footer = ({ mulish, dmSans }) => {
                     Download on Play Store
                   </h1>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full mt-36 lg:px-10 xl:px-16">
+            <div className="rounded-[100px] h-[72px] flex justify-between items-center px-10 w-full bg-white bg-opacity-20 shadow-lg">
+              <input
+                style={mulish}
+                type="text"
+                className=" text-white placeholder-white bg-transparent rounded-[100px] flex-grow h-full px-4"
+                placeholder="Your email address"
+              />
+              <div className="bg-white rounded-[100px] hover:bg-[#4818DC] duration-300 flex justify-center items-center w-[336px] space-x-10 h-[56px]">
+                <h1 className="text-black font-bold" style={dmSans}>
+                  Subscribe to our newsletter
+                </h1>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.7806 12.5302L14.0306 19.2802C13.9257 19.3852 13.792 19.4568 13.6465 19.4858C13.5009 19.5147 13.35 19.4999 13.2129 19.4431C13.0758 19.3863 12.9586 19.29 12.8762 19.1666C12.7938 19.0432 12.7499 18.898 12.75 18.7496V12.7496H3.75C3.55109 12.7496 3.36032 12.6706 3.21967 12.5299C3.07902 12.3893 3 12.1985 3 11.9996C3 11.8007 3.07902 11.6099 3.21967 11.4693C3.36032 11.3286 3.55109 11.2496 3.75 11.2496H12.75V5.24961C12.7499 5.10119 12.7938 4.95607 12.8762 4.83263C12.9586 4.70918 13.0758 4.61296 13.2129 4.55615C13.35 4.49933 13.5009 4.48448 13.6465 4.51347C13.792 4.54245 13.9257 4.61398 14.0306 4.71899L20.7806 11.469C20.8504 11.5386 20.9057 11.6214 20.9434 11.7124C20.9812 11.8035 21.0006 11.9011 21.0006 11.9996C21.0006 12.0982 20.9812 12.1958 20.9434 12.2868C20.9057 12.3779 20.8504 12.4606 20.7806 12.5302Z"
+                    fill="#111111"
+                  />
+                </svg>
               </div>
             </div>
           </div>

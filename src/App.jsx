@@ -29,7 +29,7 @@ const App = () => {
       <Store mulish={mulish} dmSans={dmSans} />
       <Transfer mulish={mulish} dmSans={dmSans} />
       <Answer mulish={mulish} dmSans={dmSans} />
-      <Footer mulish={mulish} dmSans={dmSans} />
+      <Footer mulish={mulish} dmSans={dmSans} sofiaSans={sofiaSans}/>
     </div>
   );
 };
