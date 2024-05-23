@@ -6,6 +6,8 @@ import GreenEllipse from "../assets/green-ellipse.png";
 import Cbn from "../assets/cbn.png";
 import Ndic from "../assets/ndic.png";
 import Nitda from "../assets/nitda.png";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Hero = ({ dmSans, mulish }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:768px)");
@@ -56,6 +58,10 @@ const Hero = ({ dmSans, mulish }) => {
     boxShadow: "0px 20px 32px 0px rgba(0, 0, 0, 0.16)",
     padding: "1px 26px 1px 0px",
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="bg-[#1a1a29]">
       {isNonMobileScreens ? (
@@ -91,7 +97,7 @@ const Hero = ({ dmSans, mulish }) => {
             </defs>
           </svg>
 
-          <div className="px-10 xl:px-16 flex justify-between  z-20 2xl:justify-center">
+          <div className="px-10 xl:px-16 flex justify-between z-20 2xl:justify-center">
             <div className="flex flex-col mt-16 text-white">
               <h1
                 style={mulish}

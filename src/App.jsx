@@ -8,8 +8,11 @@ import Store from "./components/Store";
 import Transfer from "./components/Transfer";
 import Answer from "./components/Answer";
 import Footer from "./components/Footer";
+import { ClockLoader } from "react-spinners";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [isloading, setIsLoading] = useState(true);
   const mulish = {
     fontFamily: "'Mulish', sans-serif",
   };
@@ -19,18 +22,32 @@ const App = () => {
   const dmSans = {
     fontFamily: "'DM Sans', sans-serif",
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
   return (
-    <div>
-      <Navbar mulish={mulish} sofiaSans={sofiaSans} />
-      <Hero mulish={mulish} dmSans={dmSans} />
-      <Partner mulish={mulish} dmSans={dmSans} />
-      <Work mulish={mulish} dmSans={dmSans} />
-      <Review mulish={mulish} dmSans={dmSans} />
-      <Store mulish={mulish} dmSans={dmSans} />
-      <Transfer mulish={mulish} dmSans={dmSans} />
-      <Answer mulish={mulish} dmSans={dmSans} />
-      <Footer mulish={mulish} dmSans={dmSans} sofiaSans={sofiaSans}/>
-    </div>
+    <>
+      {isloading ? (
+        <div className="h-screen w-screen flex justify-center items-center">
+          <ClockLoader color="rgba(19, 20, 70, 1)" />
+        </div>
+      ) : (
+        <div>
+          <Navbar mulish={mulish} sofiaSans={sofiaSans} />
+          <Hero mulish={mulish} dmSans={dmSans} />
+          <Partner mulish={mulish} dmSans={dmSans} />
+          <Work mulish={mulish} dmSans={dmSans} />
+          <Review mulish={mulish} dmSans={dmSans} />
+          <Store mulish={mulish} dmSans={dmSans} />
+          <Transfer mulish={mulish} dmSans={dmSans} />
+          <Answer mulish={mulish} dmSans={dmSans} />
+          <Footer mulish={mulish} dmSans={dmSans} sofiaSans={sofiaSans} />
+        </div>
+      )}
+    </>
   );
 };
 
