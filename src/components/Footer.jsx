@@ -246,10 +246,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   />
                 </svg>
 
-                <h1
-                  style={dmSans}
-                  className="text-2xl leading-[32px] text-white"
-                >
+                <h1 style={dmSans} className="text-sm text-white">
                   twitter
                 </h1>
               </div>
@@ -268,10 +265,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   />
                 </svg>
 
-                <h1
-                  style={dmSans}
-                  className="text-2xl leading-[32px] text-white"
-                >
+                <h1 style={dmSans} className="text-sm text-white">
                   instagram
                 </h1>
               </div>
@@ -290,10 +284,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   />
                 </svg>
 
-                <h1
-                  style={dmSans}
-                  className="text-2xl leading-[32px] text-white"
-                >
+                <h1 style={dmSans} className="text-sm text-white">
                   linkedin
                 </h1>
               </div>
@@ -312,10 +303,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   />
                 </svg>
 
-                <h1
-                  style={dmSans}
-                  className="text-2xl leading-[32px] text-white"
-                >
+                <h1 style={dmSans} className="text-sm text-white">
                   facebook
                 </h1>
               </div>
@@ -371,10 +359,10 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   (Android)
                 </p>
               </div>
-              <div className="flex justify-center items-center space-x-16 mt-7">
+              <div className="flex justify-center items-center space-x-3 mt-7">
                 <div
                   style={heroButtonStyle}
-                  className="flex justify-center items-center z-10 h-[56px] w-[262px] gap-[10px] md:mt-10 lg:mt-16"
+                  className="flex justify-center items-center z-10 h-[45px] w-[200px] gap-[10px]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -395,7 +383,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                 </div>
                 <div
                   style={heroButtonStyle}
-                  className="flex justify-center items-center z-10 h-[56px] w-[262px] gap-[10px] md:mt-10 lg:mt-16"
+                  className="flex justify-center items-center z-10 h-[45px] w-[200px] gap-[10px]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -418,17 +406,17 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
             </div>
           </div>
 
-          <div className="w-full mt-36 lg:px-10 xl:px-16">
-            <div className="rounded-[100px] h-[72px] flex justify-between items-center px-10 w-full bg-white bg-opacity-20 shadow-lg">
+          <div className="w-full mt-20 px-5 sm:px-10">
+            <div className="rounded-[100px] h-[60px] flex justify-between items-center px-5 w-full bg-white bg-opacity-20 shadow-lg">
               <input
                 style={mulish}
                 type="text"
-                className=" text-white placeholder-white bg-transparent rounded-[100px] outline-none flex-grow h-full px-4"
+                className=" text-white placeholder-white bg-transparent text-sm rounded-[100px] outline-none flex-grow h-full px-3"
                 placeholder="Your email address"
               />
-              <div className="bg-white rounded-[100px] hover:bg-[#4818DC] duration-300 flex justify-center items-center w-[336px] space-x-10 h-[56px]">
-                <h1 className="text-black font-bold" style={dmSans}>
-                  Subscribe to our newsletter
+              <div className="bg-white rounded-[100px] hover:bg-[#4818DC] duration-300 flex justify-center items-center w-1/3 space-x-3 h-[45px]">
+                <h1 className="text-black font-bold text-xs" style={dmSans}>
+                  Subscribe
                 </h1>
                 <svg
                   width="24"
@@ -445,9 +433,9 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
               </div>
             </div>
 
-            <div className="w-full border-[rgba(255,255,255,0.4)] border-[1px] mt-24"></div>
+            <div className="w-full border-[rgba(255,255,255,0.4)] border-[1px] mt-16"></div>
 
-            <div className="flex justify-center items-center space-x-3 mt-7">
+            <div className="flex justify-center items-center space-x-3 mt-5">
               <svg
                 width="36"
                 height="40"
@@ -464,7 +452,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
               </svg>
 
               <h1
-                className="font-semibold text-white text-2xl leading-[28px] "
+                className="font-semibold text-white text-xl "
                 style={sofiaSans}
               >
                 DoshPay
@@ -544,7 +532,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
 
             <h1
               style={mulish}
-              className="font-medium text-lg leading-[22px] text-white opacity-80  text-center"
+              className="font-medium text-lg text-white opacity-80  text-center"
             >
               Follow us on
             </h1>
@@ -564,10 +552,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   />
                 </svg>
 
-                <h1
-                  style={dmSans}
-                  className="text-2xl leading-[32px] text-white"
-                >
+                <h1 style={dmSans} className="text-sm text-white">
                   twitter
                 </h1>
               </div>
@@ -586,10 +571,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   />
                 </svg>
 
-                <h1
-                  style={dmSans}
-                  className="text-2xl leading-[32px] text-white"
-                >
+                <h1 style={dmSans} className="text-sm text-white">
                   instagram
                 </h1>
               </div>
@@ -608,10 +590,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   />
                 </svg>
 
-                <h1
-                  style={dmSans}
-                  className="text-2xl leading-[32px] text-white"
-                >
+                <h1 style={dmSans} className="text-sm text-white">
                   linkedin
                 </h1>
               </div>
@@ -630,20 +609,14 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   />
                 </svg>
 
-                <h1
-                  style={dmSans}
-                  className="text-2xl leading-[32px] text-white"
-                >
+                <h1 style={dmSans} className="text-sm text-white">
                   facebook
                 </h1>
               </div>
             </div>
           </div>
 
-          <h1
-            className="mt-10 text-center text-sm leading-5 text-white"
-            style={dmSans}
-          >
+          <h1 className="mt-5 text-center text-sm text-white" style={dmSans}>
             © 2023 Chumskiisama. All rights reserved.
           </h1>
         </div>
