@@ -146,7 +146,7 @@ const Transfer = ({ mulish, dmSans }) => {
           </div>
         </div>
       ) : (
-        <div className="mt-28">
+        <div className="mt-20">
           <h1
             style={mulish}
             className=" text-2xl text-center font-extrabold px-10"

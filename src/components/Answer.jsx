@@ -271,7 +271,7 @@ const Answer = ({ mulish, dmSans }) => {
                   selectedAnswer == answers[0].answer1
                     ? "bg-[#121621] text-white"
                     : "bg-[#5D32E308]"
-                } flex items-center px-5 mt-7 w-full h-[68px] rounded-[12px]`}
+                } flex items-center px-5 mt-7 w-full h-[85px] rounded-[12px]`}
                 style={{
                   border: "1px solid rgba(93, 50, 227, 0.16)",
                 }}
@@ -301,7 +301,7 @@ const Answer = ({ mulish, dmSans }) => {
                   selectedAnswer == answers[0].answer2
                     ? "bg-[#121621] text-white"
                     : "bg-[#5D32E308]"
-                } flex items-center px-5 mt-7 w-full h-[68px] rounded-[12px]`}
+                } flex items-center px-5 mt-7 w-full h-[85px] rounded-[12px]`}
                 style={{
                   border: "1px solid rgba(17, 17, 17, 0.2)",
                 }}
@@ -331,7 +331,7 @@ const Answer = ({ mulish, dmSans }) => {
                   selectedAnswer == answers[0].answer3
                     ? "bg-[#121621] text-white"
                     : "bg-[#5D32E308]"
-                } flex items-center px-5 mt-7 w-full h-[68px] rounded-[12px]`}
+                } flex items-center px-5 mt-7 w-full h-[85px] rounded-[12px]`}
                 style={{
                   border: "1px solid rgba(17, 17, 17, 0.2)",
                 }}
@@ -361,7 +361,7 @@ const Answer = ({ mulish, dmSans }) => {
                   selectedAnswer == answers[0].answer4
                     ? "bg-[#121621] text-white"
                     : "bg-[#5D32E308]"
-                } flex items-center px-5 mt-7 w-full h-[68px] rounded-[12px]`}
+                } flex items-center px-5 mt-7 w-full h-[85px] rounded-[12px]`}
                 style={{
                   border: "1px solid rgba(17, 17, 17, 0.2)",
                 }}
@@ -390,7 +390,7 @@ const Answer = ({ mulish, dmSans }) => {
                   selectedAnswer == answers[0].answer5
                     ? "bg-[#121621] text-white"
                     : "bg-[#5D32E308]"
-                } flex items-center px-5 mt-7 w-full h-[68px] rounded-[12px]`}
+                } flex items-center px-5 mt-7 w-full h-[85px] rounded-[12px]`}
                 style={{
                   border: "1px solid rgba(17, 17, 17, 0.2)",
                 }}
@@ -420,7 +420,7 @@ const Answer = ({ mulish, dmSans }) => {
                   selectedAnswer == answers[0].answer6
                     ? "bg-[#121621] text-white"
                     : "bg-[#5D32E308]"
-                } flex items-center px-5 mt-7 w-full h-[68px] rounded-[12px]`}
+                } flex items-center px-5 mt-7 w-full h-[85px] rounded-[12px]`}
                 style={{
                   border: "1px solid rgba(17, 17, 17, 0.2)",
                 }}
@@ -451,7 +451,7 @@ const Answer = ({ mulish, dmSans }) => {
                   selectedAnswer == answers[0].answer7
                     ? "bg-[#121621] text-white"
                     : "bg-[#5D32E308]"
-                } flex items-center px-5 mt-7 w-full h-[68px] rounded-[12px]`}
+                } flex items-center px-5 mt-7 w-full h-[85px] rounded-[12px]`}
                 style={{
                   border: "1px solid rgba(17, 17, 17, 0.2)",
                 }}
@@ -480,7 +480,7 @@ const Answer = ({ mulish, dmSans }) => {
                   selectedAnswer == answers[0].answer8
                     ? "bg-[#121621] text-white"
                     : "bg-[#5D32E308]"
-                } flex items-center px-5 mt-7 w-full h-[68px] rounded-[12px]`}
+                } flex items-center px-5 mt-7 w-full h-[85px] rounded-[12px]`}
                 style={{
                   border: "1px solid rgba(17, 17, 17, 0.2)",
                 }}

@@ -7,7 +7,6 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
     borderRadius: "100px",
     background: "white",
     boxShadow: "0px 20px 32px 0px rgba(0, 0, 0, 0.16)",
-    padding: "1px 26px 1px 0px",
   };
   return (
     <div className="mt-72">
@@ -318,9 +317,9 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
           </h1>
         </div>
       ) : (
-        <div className="bg-[#121621] mt-[300px] py-10">
+        <div className="bg-[#121621] mt-[250px] py-10">
           <div className="relative">
-            <div className="bg-[#4818DC] h-[520px] mx-auto mt-[-300px] relative rounded-[28px]">
+            <div className="bg-[#4818DC] h-[400px] mx-auto mt-[-200px] w-4/5 relative rounded-[28px]">
               <div className="absolute bottom-0 w-full pt-40 h-full z-0">
                 <svg
                   width=""
@@ -344,7 +343,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                 </svg>
               </div>
 
-              <div className="flex flex-col justify-center items-center space-y-10 pt-32">
+              <div className="flex flex-col justify-center text-center px-5 items-center space-y-10 pt-28">
                 <h1
                   style={mulish}
                   className="text-xl z-10 font-extrabold text-white"
@@ -359,10 +358,10 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   (Android)
                 </p>
               </div>
-              <div className="flex justify-center items-center space-x-3 mt-7">
+              <div className="flex justify-center items-center px-5 space-x-3 mt-7">
                 <div
                   style={heroButtonStyle}
-                  className="flex justify-center items-center z-10 h-[45px] w-[200px] gap-[10px]"
+                  className="flex justify-center items-center z-10 h-[50px] w-1/2 space-x-3 px-1"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -383,7 +382,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                 </div>
                 <div
                   style={heroButtonStyle}
-                  className="flex justify-center items-center z-10 h-[45px] w-[200px] gap-[10px]"
+                  className="flex justify-center items-center z-10 h-[50px] w-1/2 space-x-3 px-1"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -538,7 +537,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
             </h1>
 
             <div className="w-full border-[rgba(255,255,255,0.4)] flex items-center justify-between h-[60px] border-t-[1px] border-b-[1px] mt-5">
-              <div className="flex space-x-3 items-center  border-[rgba(255,255,255,0.4)] border-r-[1px] h-full justify-center w-1/4">
+              <div className="flex space-x-1 items-center  border-[rgba(255,255,255,0.4)] border-r-[1px] h-full justify-center w-1/4">
                 <svg
                   width="24"
                   height="24"
@@ -557,7 +556,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                 </h1>
               </div>
 
-              <div className="flex space-x-3 items-center justify-center w-1/4 border-[rgba(255,255,255,0.4)] border-r-[1px] h-full">
+              <div className="flex space-x-1 items-center justify-center w-1/4 border-[rgba(255,255,255,0.4)] border-r-[1px] h-full">
                 <svg
                   width="24"
                   height="24"
@@ -576,7 +575,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                 </h1>
               </div>
 
-              <div className="flex space-x-3 items-center justify-center w-1/4 border-[rgba(255,255,255,0.4)] border-r-[1px] h-full">
+              <div className="flex space-x-1 items-center justify-center w-1/4 border-[rgba(255,255,255,0.4)] border-r-[1px] h-full">
                 <svg
                   width="24"
                   height="24"
@@ -595,7 +594,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                 </h1>
               </div>
 
-              <div className="flex space-x-3 justify-center w-1/4 items-center">
+              <div className="flex space-x-1 justify-center w-1/4 items-center">
                 <svg
                   width="24"
                   height="24"
