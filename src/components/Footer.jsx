@@ -14,7 +14,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
       {isNonMobileScreens ? (
         <div className="bg-[#121621] mt-[500px] py-10">
           <div className="relative">
-            <div className="bg-[#4818DC] h-[520px] mx-auto mt-[-300px] rounded-[28px]">
+            <div className="bg-[#4818DC] h-[520px] mx-auto mt-[-300px] w-4/5 relative rounded-[28px]">
               <div className="absolute bottom-0 w-full pt-40 h-full z-0">
                 <svg
                   width=""
@@ -105,7 +105,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
               <input
                 style={mulish}
                 type="text"
-                className=" text-white placeholder-white bg-transparent rounded-[100px] flex-grow h-full px-4"
+                className=" text-white placeholder-white bg-transparent rounded-[100px] outline-none flex-grow h-full px-4"
                 placeholder="Your email address"
               />
               <div className="bg-white rounded-[100px] hover:bg-[#4818DC] duration-300 flex justify-center items-center w-[336px] space-x-10 h-[56px]">
