@@ -8,6 +8,7 @@ import Ndic from "../assets/ndic.png";
 import Nitda from "../assets/nitda.png";
 import { useEffect } from "react";
 import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero = ({ dmSans, mulish }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:768px)");
@@ -61,7 +62,7 @@ const Hero = ({ dmSans, mulish }) => {
 
   useEffect(() => {
     AOS.init();
-  }, []);
+  });
   return (
     <div className="bg-[#1a1a29]">
       {isNonMobileScreens ? (
@@ -98,7 +99,11 @@ const Hero = ({ dmSans, mulish }) => {
           </svg>
 
           <div className="px-10 xl:px-16 flex justify-between z-20 2xl:justify-center">
-            <div className="flex flex-col mt-16 text-white">
+            <div
+              className="flex flex-col mt-16 text-white"
+              data-aos="fade-right"
+              data-aos-duration="600"
+            >
               <h1
                 style={mulish}
                 className="max-w-[550px] md:text-2xl lg:text-4xl xl:text-[54px] lg:leading-[50px] xl:leading-[72px] font-extrabold"
@@ -116,6 +121,8 @@ const Hero = ({ dmSans, mulish }) => {
                 </p>
               </div>
               <div
+                data-aos="fade-up"
+                data-aos-duration="600"
                 style={heroButtonStyle}
                 className="flex justify-center items-center h-[56px] w-[232px] gap-[10px] md:mt-10 lg:mt-16"
               >
@@ -165,7 +172,11 @@ const Hero = ({ dmSans, mulish }) => {
               </div>
             </div>
 
-            <div className="flex lg:space-x-[-50px] xl:space-x-[-40px]">
+            <div
+              className="flex lg:space-x-[-50px] xl:space-x-[-40px]"
+              data-aos="fade-left"
+              data-aos-duration="600"
+            >
               <div className="justify-center items-center relative md:hidden lg:flex ">
                 <img
                   src={Notification}
@@ -237,7 +248,7 @@ const Hero = ({ dmSans, mulish }) => {
           </div>
         </div>
       ) : (
-        <div className="bg-[#1a1a29] pt-48 pb-24 relative text-center ">
+        <div className="bg-[#1a1a29] pt-48 pb-24 relative text-center">
           <div style={mobileTopStyle} className="absolute top-0"></div>
 
           <div style={mobileBottomStyle} className="absolute bottom-48"></div>
@@ -271,7 +282,7 @@ const Hero = ({ dmSans, mulish }) => {
             </defs>
           </svg>
 
-          <div>
+          <div data-aos="fade-down" data-aos-duration="600">
             <h1
               style={mulish}
               className="text-[36px] max-w-[300px] leading-[44px] mx-auto font-extrabold text-white"
@@ -290,6 +301,8 @@ const Hero = ({ dmSans, mulish }) => {
             </div>
 
             <div
+              data-aos="fade-up"
+              data-aos-duration="600"
               style={heroButtonStyle}
               className="flex justify-center items-center mx-auto h-[56px] w-[232px] gap-[10px] mt-7"
             >
@@ -341,14 +354,18 @@ const Hero = ({ dmSans, mulish }) => {
               </h1>
             </div>
 
-            <div className="flex justify-center items-center z-20 relative mt-20">
+            <div
+              className="flex justify-center items-center z-20 relative mt-20"
+              data-aos="fade-right"
+              data-aos-duration="600"
+            >
               <img
                 src={IphoneMain}
                 alt="IphoneMainBody"
                 className="h-[541.699px] flex-shrink-0"
               />
 
-              <div className=" absolute flex ">
+              <div className="absolute flex ">
                 <img
                   src={GreenEllipse}
                   className="ml-[-30px] mt-[-30px] w-[280px]"

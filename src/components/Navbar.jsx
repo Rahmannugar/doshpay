@@ -1,5 +1,8 @@
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Navbar = ({ mulish, sofiaSans }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -7,10 +10,18 @@ const Navbar = ({ mulish, sofiaSans }) => {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <nav className="fixed z-40 md:relative w-full h-20 md:h-24 lg:h-28 bg-[#1a1a29]">
       <div className="flex justify-between items-center h-full w-full px-4 lg:px-10 xl:px-16">
-        <a href="/" className="flex justify-center items-center space-x-2">
+        <a
+          href="/"
+          className="flex justify-center items-center space-x-2"
+          data-aos="fade-right"
+          data-aos-duration="600"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="36"
@@ -32,6 +43,8 @@ const Navbar = ({ mulish, sofiaSans }) => {
 
         <div
           style={mulish}
+          data-aos="fade-left"
+          data-aos-duration="600"
           className="hidden md:flex md:justify-center md:items-center text-white md:space-x-3 lg:space-x-6 cursor-pointer"
         >
           <h1>FAQs</h1>
@@ -68,7 +81,12 @@ const Navbar = ({ mulish, sofiaSans }) => {
           </div>
         </div>
 
-        <div onClick={handleNav} className="md:hidden text-white">
+        <div
+          onClick={handleNav}
+          className="md:hidden text-white"
+          data-aos="fade-down"
+          data-aos-duration="500"
+        >
           <MenuIcon />
         </div>
       </div>

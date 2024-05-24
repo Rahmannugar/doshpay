@@ -15,6 +15,9 @@ import blueFrame from "../assets/blue-frame.png";
 import greenFrame from "../assets/green-frame.png";
 import yellowFrame from "../assets/yellow-frame.png";
 import pinkFrame from "../assets/pink-frame.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Partner = ({ mulish, dmSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:900px)");
@@ -87,16 +90,28 @@ const Partner = ({ mulish, dmSans }) => {
     boxShadow: "0px 20px 32px 0px rgba(0, 0, 0, 0.16)",
     padding: "1px 26px 1px 0px",
   };
+
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <div className="bg-[#f8f7f7d8] overflow-hidden">
       {isNonMobileScreens ? (
         <div style={mulish} className="py-20">
-          <h1 className="text-4xl font-bold text-center">
+          <h1
+            className="text-4xl font-bold text-center"
+            data-aos="fade-down"
+            data-aos-duration="400"
+          >
             Partner with <span className="text-[#5D32E3]">Over 20 </span>
             service providers in Nigeria
           </h1>
 
-          <div className="flex justify-center items-center space-x-7 mt-20 overflow-hidden">
+          <div
+            className="flex justify-center items-center space-x-7 mt-20"
+            data-aos="fade-left"
+            data-aos-duration="700"
+          >
             {imageArray.map((image) => (
               <div
                 id={image.id}
@@ -115,7 +130,11 @@ const Partner = ({ mulish, dmSans }) => {
           </div>
 
           <div className="px-10 xl:px-16 md:mt-36 lg:mt-48 flex justify-between space-x-10 2xl:space-x-20 2xl:justify-center items-center">
-            <div className="flex flex-col">
+            <div
+              className="flex flex-col"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
               <h1
                 style={mulish}
                 className=" md:text-2xl lg:text-4xl md:max-w-[400px] lg:max-w-[450px] xl:max-w-[563px] font-extrabold leading-[64px] text-[#111]"
@@ -137,6 +156,8 @@ const Partner = ({ mulish, dmSans }) => {
 
               <div
                 style={partnerButtonStyle}
+                data-aos="fade-down"
+                data-aos-duration="400"
                 className="flex justify-center items-center h-[56px] w-[232px] gap-[10px] md:mt-10 lg:mt-14"
               >
                 <svg
@@ -186,12 +207,18 @@ const Partner = ({ mulish, dmSans }) => {
 
               <h1
                 style={dmSans}
+                data-aos="fade-right"
+                data-aos-duration="500"
                 className="font-semibold leading-6 text-[#111] text-lg md:mt-16 lg:mt-24"
               >
                 Follow us on
               </h1>
 
-              <div className="flex lg:space-x-12 md:space-x-6 mt-5">
+              <div
+                className="flex lg:space-x-12 md:space-x-6 mt-5"
+                data-aos="fade-right"
+                data-aos-duration="500"
+              >
                 <div className="flex items-center space-x-2">
                   <div
                     style={mulish}
@@ -285,6 +312,8 @@ const Partner = ({ mulish, dmSans }) => {
               <div className="flex items-center justify-center space-x-4 lg:px-5 ">
                 <div
                   style={dmSans}
+                  data-aos="fade-down-right"
+                  data-aos-duration="500"
                   className="md:w-[250px] md:h-[250px] lg:w-[268px] lg:h-[268px] md:px-5 lg:px-0 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
                   <img
@@ -310,6 +339,8 @@ const Partner = ({ mulish, dmSans }) => {
                 </div>
 
                 <div
+                  data-aos="fade-down-left"
+                  data-aos-duration="500"
                   style={dmSans}
                   className="md:w-[250px] md:h-[250px] lg:w-[268px] lg:h-[268px] md:px-5 lg:px-0 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
@@ -338,6 +369,8 @@ const Partner = ({ mulish, dmSans }) => {
 
               <div className="flex items-center justify-center space-x-4 lg:px-5  mt-5">
                 <div
+                  data-aos="fade-up-right"
+                  data-aos-duration="500"
                   style={dmSans}
                   className="md:w-[250px] md:h-[250px] lg:w-[268px] lg:h-[268px] md:px-5 lg:px-0 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
@@ -364,6 +397,8 @@ const Partner = ({ mulish, dmSans }) => {
                 </div>
 
                 <div
+                  data-aos="fade-up-left"
+                  data-aos-duration="500"
                   style={dmSans}
                   className="md:w-[250px] md:h-[250px] lg:w-[268px] lg:h-[268px] md:px-5 lg:px-0 space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
@@ -394,12 +429,20 @@ const Partner = ({ mulish, dmSans }) => {
         </div>
       ) : (
         <div style={mulish} className="py-16 z-20">
-          <h1 className="text-2xl font-bold text-center mx-auto max-w-[320px]">
+          <h1
+            className="text-2xl font-bold text-center mx-auto max-w-[320px]"
+            data-aos="fade-down"
+            data-aos-duration="400"
+          >
             Partner with <span className="text-[#5D32E3]">Over 20 </span>
             service providers in Nigeria
           </h1>
 
-          <div className="flex justify-center items-center space-x-7 mt-16 overflow-hidden">
+          <div
+            className="flex justify-center items-center space-x-7 mt-16"
+            data-aos="fade-left"
+            data-aos-duration="700"
+          >
             {imageArray.map((image) => (
               <div
                 style={{
@@ -440,6 +483,8 @@ const Partner = ({ mulish, dmSans }) => {
 
               <div
                 style={partnerButtonStyle}
+                data-aos="fade-down"
+                data-aos-duration="400"
                 className="flex justify-center items-center h-[56px] w-[232px] gap-[10px] mt-10"
               >
                 <svg
@@ -489,12 +534,18 @@ const Partner = ({ mulish, dmSans }) => {
 
               <h1
                 style={dmSans}
+                data-aos="fade-right"
+                data-aos-duration="500"
                 className="font-semibold leading-6 text-[#111] text-lg mt-20"
               >
                 Follow us on
               </h1>
 
-              <div className="flex space-x-3 mt-5">
+              <div
+                className="flex space-x-3 mt-5"
+                data-aos="fade-right"
+                data-aos-duration="500"
+              >
                 <div className="flex items-center space-x-2">
                   <div
                     style={mulish}
@@ -587,6 +638,8 @@ const Partner = ({ mulish, dmSans }) => {
             <div className="mt-16">
               <div className="flex items-center justify-center space-x-4 px-5 mt-5">
                 <div
+                  data-aos="fade-down-right"
+                  data-aos-duration="500"
                   style={dmSans}
                   className="w-[376px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
@@ -613,6 +666,8 @@ const Partner = ({ mulish, dmSans }) => {
                 </div>
 
                 <div
+                  data-aos="fade-down-left"
+                  data-aos-duration="500"
                   style={dmSans}
                   className="w-[376px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
@@ -641,6 +696,8 @@ const Partner = ({ mulish, dmSans }) => {
 
               <div className="flex items-center justify-center space-x-4 px-5  mt-5">
                 <div
+                  data-aos="fade-up-right"
+                  data-aos-duration="500"
                   style={dmSans}
                   className="w-[376px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
@@ -667,6 +724,8 @@ const Partner = ({ mulish, dmSans }) => {
                 </div>
 
                 <div
+                  data-aos="fade-up-left"
+                  data-aos-duration="500"
                   style={dmSans}
                   className="w-[376px] px-3 h-[296px] mx-auto space-y-2 rounded-[20px] flex flex-col justify-center items-center text-center bg-white"
                 >
