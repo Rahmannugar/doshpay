@@ -1,8 +1,10 @@
 import { useMediaQuery } from "@mui/material";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Review1 from "../assets/review-1.jpg";
 import Review2 from "../assets/review-2.jpg";
 import Review3 from "../assets/review-3.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Review = ({ mulish, dmSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:900px)");
@@ -98,6 +100,10 @@ const Review = ({ mulish, dmSans }) => {
     filter: "blur(70px)",
   };
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <div>
       {isNonMobileScreens ? (
@@ -108,13 +114,19 @@ const Review = ({ mulish, dmSans }) => {
         >
           <div style={middleDivStyle}></div>
           <div style={leftDivStyle}></div>
-          <div className="flex items-center space-x-3">
+          <div
+            className="flex items-center space-x-3"
+            data-aos="fade-right"
+            data-aos-duration="600"
+          >
             <h1 style={dmSans} className="text-white text-opacity-60">
               REVIEWS
             </h1>
             <h1> ⭐⭐⭐</h1>
           </div>
           <h1
+            data-aos="fade-up"
+            data-aos-duration="600"
             style={mulish}
             className="text-white font-extrabold mt-6 text-[32px] xl:text-[44px] leading-[55px]"
           >
@@ -129,6 +141,8 @@ const Review = ({ mulish, dmSans }) => {
             }}
           >
             <div
+              data-aos="fade-left"
+              data-aos-duration="700"
               className="h-[340px] w-[460px] relative flex-shrink-0 px-5 py-10 space-y-4 rounded-[20px] z-10"
               style={{
                 background: "rgba(255, 255, 255, 0.2)",
@@ -153,6 +167,8 @@ const Review = ({ mulish, dmSans }) => {
               />
             </div>
             <div
+              data-aos="fade-left"
+              data-aos-duration="700"
               className="h-[340px] w-[460px] relative flex-shrink-0 px-5 py-10 rounded-[20px] z-10"
               style={{
                 background: "rgba(255, 255, 255, 0.2)",
@@ -177,6 +193,8 @@ const Review = ({ mulish, dmSans }) => {
               />
             </div>
             <div
+              data-aos="fade-left"
+              data-aos-duration="700"
               className="h-[340px] w-[460px] relative flex-shrink-0 px-5 py-10 space-y-4 rounded-[20px] z-10"
               style={{
                 background: "rgba(255, 255, 255, 0.2)",
@@ -201,6 +219,8 @@ const Review = ({ mulish, dmSans }) => {
             </div>
 
             <div
+              data-aos="fade-left"
+              data-aos-duration="700"
               className="h-[340px] w-[460px] relative flex-shrink-0 px-5 py-10 space-y-4 rounded-[20px] z-10"
               style={{
                 background: "rgba(255, 255, 255, 0.2)",
@@ -225,6 +245,8 @@ const Review = ({ mulish, dmSans }) => {
               />
             </div>
             <div
+              data-aos="fade-left"
+              data-aos-duration="700"
               className="h-[340px] w-[460px] relative flex-shrink-0 px-5 py-10  rounded-[20px] z-10"
               style={{
                 background: "rgba(255, 255, 255, 0.2)",
@@ -249,6 +271,8 @@ const Review = ({ mulish, dmSans }) => {
               />
             </div>
             <div
+              data-aos="fade-left"
+              data-aos-duration="700"
               className="h-[340px] w-[460px] relative flex-shrink-0 px-5 py-10 space-y-4 rounded-[20px] z-10"
               style={{
                 background: "rgba(255, 255, 255, 0.2)",
@@ -275,7 +299,11 @@ const Review = ({ mulish, dmSans }) => {
 
           <div className="flex items-center justify-end px-20 space-x-10 mt-20">
             {/* left slider */}
-            <div onClick={handleSlideLeft}>
+            <div
+              onClick={handleSlideLeft}
+              data-aos="zoom-in"
+              data-aos-duration="700"
+            >
               <svg
                 width="84"
                 height="48"
@@ -300,7 +328,11 @@ const Review = ({ mulish, dmSans }) => {
               </svg>
             </div>
 
-            <div onClick={handleSlideRight}>
+            <div
+              onClick={handleSlideRight}
+              data-aos="zoom-in"
+              data-aos-duration="700"
+            >
               {/* right slider */}
               <svg
                 width="84"
@@ -335,13 +367,19 @@ const Review = ({ mulish, dmSans }) => {
           <div style={mobileMiddleDivStyle}></div>
           <div style={mobileLeftDivStyle}></div>
 
-          <div className="flex items-center space-x-3">
+          <div
+            className="flex items-center space-x-3"
+            data-aos="fade-right"
+            data-aos-duration="600"
+          >
             <h1 style={dmSans} className="text-white text-opacity-60">
               REVIEWS
             </h1>
             <h1> ⭐⭐⭐</h1>
           </div>
           <h1
+            data-aos="fade-up"
+            data-aos-duration="600"
             style={mulish}
             className="text-white font-extrabold mt-5 text-[28px] leading-[35px]"
           >
@@ -356,6 +394,8 @@ const Review = ({ mulish, dmSans }) => {
             }}
           >
             <div
+              data-aos="fade-left"
+              data-aos-duration="700"
               className="h-[246px] w-[320px] relative flex-shrink-0 px-5 py-5 space-y-4 rounded-[20px] z-10"
               style={{
                 background: "rgba(255, 255, 255, 0.2)",
@@ -380,6 +420,8 @@ const Review = ({ mulish, dmSans }) => {
               />
             </div>
             <div
+              data-aos="fade-left"
+              data-aos-duration="700"
               className="h-[246px] w-[320px] relative flex-shrink-0 px-5 py-5 rounded-[20px] z-10"
               style={{
                 background: "rgba(255, 255, 255, 0.2)",
@@ -404,6 +446,8 @@ const Review = ({ mulish, dmSans }) => {
               />
             </div>
             <div
+              data-aos="fade-left"
+              data-aos-duration="700"
               className="h-[246px] w-[320px] relative flex-shrink-0 px-5 py-5 space-y-4 rounded-[20px] z-10"
               style={{
                 background: "rgba(255, 255, 255, 0.2)",
@@ -502,7 +546,11 @@ const Review = ({ mulish, dmSans }) => {
 
           <div className="flex items-center justify-end px-2 space-x-7 mt-16">
             {/* left slider */}
-            <div onClick={handleSlideLeft}>
+            <div
+              onClick={handleSlideLeft}
+              data-aos="zoom-in"
+              data-aos-duration="700"
+            >
               <svg
                 width="64"
                 height="36"
@@ -528,7 +576,11 @@ const Review = ({ mulish, dmSans }) => {
             </div>
 
             {/* right slider */}
-            <div onClick={handleSlideRight}>
+            <div
+              onClick={handleSlideRight}
+              data-aos="zoom-in"
+              data-aos-duration="700"
+            >
               <svg
                 width="64"
                 height="36"
