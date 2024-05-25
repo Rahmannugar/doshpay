@@ -35,7 +35,7 @@ const App = () => {
           <ClockLoader color="rgba(19, 20, 70, 1)" />
         </div>
       ) : (
-        <div>
+        <div className="overflow-hidden">
           <Navbar mulish={mulish} sofiaSans={sofiaSans} />
           <Hero mulish={mulish} dmSans={dmSans} />
           <Partner mulish={mulish} dmSans={dmSans} />

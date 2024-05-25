@@ -1,6 +1,8 @@
 import { useMediaQuery } from "@mui/material";
 import answers from "./defaultAnswers";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Answer = ({ mulish, dmSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
@@ -30,12 +32,18 @@ const Answer = ({ mulish, dmSans }) => {
     setSelectedAnswer(answers[0].answer8);
   };
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <div>
       {isNonMobileScreens ? (
         <div className="mt-10">
           <div className="mt-20">
             <h1
+              data-aos="fade-up"
+              data-aos-duration="700"
               style={mulish}
               className="leading-[55px] text-center font-extrabold xl:text-[44px] lg:text-[36px]"
             >
@@ -43,6 +51,8 @@ const Answer = ({ mulish, dmSans }) => {
             </h1>
             <div className="mt-24 px-10 xl:px-16 space-x-7 2xl:space-x-10 flex justify-between 2xl:justify-center items-center">
               <div
+                data-aos="fade-right"
+                data-aos-duration="700"
                 className=" h-[894.67px] max-w-[600px] py-8 rounded-[24px]"
                 style={{
                   border: "1px solid rgba(17, 17, 17, 0.2)",
@@ -215,6 +225,8 @@ const Answer = ({ mulish, dmSans }) => {
               </div>
 
               <div
+                data-aos="fade-left"
+                data-aos-duration="700"
                 className="h-[894.67px] max-w-[600px] rounded-[24px] py-8 bg-[#1A569E]"
                 style={{
                   border: "1px solid rgba(17, 17, 17, 0.2)",
@@ -245,7 +257,12 @@ const Answer = ({ mulish, dmSans }) => {
         </div>
       ) : (
         <div className="mt-20">
-          <h1 style={mulish} className=" text-3xl text-center font-extrabold ">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="700"
+            style={mulish}
+            className=" text-3xl text-center font-extrabold "
+          >
             FAQs and Answers.
           </h1>
 
@@ -264,7 +281,11 @@ const Answer = ({ mulish, dmSans }) => {
                 border: "1px solid rgba(17,17, 17, 0.12)",
               }}
             ></div>
-            <div className="flex flex-col px-5 items-center ">
+            <div
+              className="flex flex-col px-5 items-center"
+              data-aos="fade-right"
+              data-aos-duration="700"
+            >
               <div
                 onClick={click1}
                 className={` ${
@@ -296,6 +317,8 @@ const Answer = ({ mulish, dmSans }) => {
               </div>
 
               <div
+                data-aos="fade-left"
+                data-aos-duration="700"
                 onClick={click2}
                 className={` ${
                   selectedAnswer == answers[0].answer2
@@ -326,6 +349,8 @@ const Answer = ({ mulish, dmSans }) => {
               </div>
 
               <div
+                data-aos="fade-right"
+                data-aos-duration="700"
                 onClick={click3}
                 className={` ${
                   selectedAnswer == answers[0].answer3
@@ -356,6 +381,8 @@ const Answer = ({ mulish, dmSans }) => {
               </div>
 
               <div
+                data-aos="fade-left"
+                data-aos-duration="700"
                 onClick={click4}
                 className={` ${
                   selectedAnswer == answers[0].answer4
@@ -385,6 +412,8 @@ const Answer = ({ mulish, dmSans }) => {
               </div>
 
               <div
+                data-aos="fade-right"
+                data-aos-duration="700"
                 onClick={click5}
                 className={` ${
                   selectedAnswer == answers[0].answer5
@@ -415,6 +444,8 @@ const Answer = ({ mulish, dmSans }) => {
               </div>
 
               <div
+                data-aos="fade-left"
+                data-aos-duration="700"
                 onClick={click6}
                 className={` ${
                   selectedAnswer == answers[0].answer6
@@ -446,6 +477,8 @@ const Answer = ({ mulish, dmSans }) => {
               </div>
 
               <div
+                data-aos="fade-right"
+                data-aos-duration="700"
                 onClick={click7}
                 className={` ${
                   selectedAnswer == answers[0].answer7
@@ -475,6 +508,8 @@ const Answer = ({ mulish, dmSans }) => {
               </div>
 
               <div
+                data-aos="fade-left"
+                data-aos-duration="700"
                 onClick={click8}
                 className={` ${
                   selectedAnswer == answers[0].answer8
