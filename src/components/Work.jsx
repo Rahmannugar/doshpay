@@ -1,6 +1,8 @@
 import { useMediaQuery } from "@mui/material";
 import work from "../assets/work.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Work = ({ mulish, dmSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:900px)");
@@ -32,6 +34,9 @@ const Work = ({ mulish, dmSans }) => {
     padding: "1px 26px 1px 0px",
     border: "1px solid #5D32E3",
   };
+  useEffect(() => {
+    AOS.init();
+  });
 
   return (
     <div>
@@ -39,6 +44,8 @@ const Work = ({ mulish, dmSans }) => {
         <div className="mt-32" style={dmSans}>
           <div className="text-center">
             <h1
+              data-aos="fade-down"
+              data-aos-duration="500"
               style={mulish}
               className="text-[#111] font-extrabold leading-[60px] text-[44px]"
             >
@@ -62,6 +69,8 @@ const Work = ({ mulish, dmSans }) => {
               }}
             >
               <img
+                data-aos="fade-up"
+                data-aos-duration="600"
                 src={work}
                 alt="work"
                 className="rounded-t-3xl w-[387px] h-full object-cover object-top"
@@ -74,7 +83,11 @@ const Work = ({ mulish, dmSans }) => {
                 onClick={handleToggle1}
                 className="flex flex-col md:space-y-2 xl:space-y-5 md:mt-7 xl:mt-10"
               >
-                <div className="flex space-x-4">
+                <div
+                  className="flex space-x-4"
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                >
                   {toggle1 ? (
                     <svg
                       onClick={handleToggle1}
@@ -122,6 +135,8 @@ const Work = ({ mulish, dmSans }) => {
                   </h1>
                 </div>
                 <p
+                  data-aos="fade-left"
+                  data-aos-duration="600"
                   className={`max-w-[516px] md:text-sm xl:leading-6 px-10 ${
                     toggle1 ? "text-black" : "text-neutral-900 text-opacity-50"
                   }`}
@@ -136,7 +151,11 @@ const Work = ({ mulish, dmSans }) => {
                 onClick={handleToggle2}
                 className="flex flex-col md:space-y-2 xl:space-y-5 md:mt-7 xl:mt-10"
               >
-                <div className="flex space-x-4 items-center">
+                <div
+                  className="flex space-x-4 items-center"
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                >
                   {toggle2 ? (
                     <svg
                       onClick={handleToggle2}
@@ -183,6 +202,8 @@ const Work = ({ mulish, dmSans }) => {
                   </h1>
                 </div>
                 <p
+                  data-aos="fade-left"
+                  data-aos-duration="600"
                   className={`max-w-[516px] md:text-sm xl:leading-6 px-10 ${
                     toggle2 ? "text-black" : "text-neutral-900 text-opacity-50"
                   }`}
@@ -199,7 +220,11 @@ const Work = ({ mulish, dmSans }) => {
                 onClick={handleToggle3}
                 className="flex flex-col md:space-y-2 xl:space-y-5 md:mt-7 xl:mt-10"
               >
-                <div className="flex space-x-4 items-center">
+                <div
+                  className="flex space-x-4 items-center"
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                >
                   {toggle3 ? (
                     <svg
                       onClick={handleToggle3}
@@ -246,6 +271,8 @@ const Work = ({ mulish, dmSans }) => {
                   </h1>
                 </div>
                 <p
+                  data-aos="fade-left"
+                  data-aos-duration="600"
                   className={`max-w-[516px] md:text-sm xl:leading-6 px-10 ${
                     toggle3 ? "text-black" : "text-neutral-900 text-opacity-50"
                   }`}
@@ -258,6 +285,8 @@ const Work = ({ mulish, dmSans }) => {
               </div>
 
               <div
+                data-aos="fade-up"
+                data-aos-duration="600"
                 style={workButtonStyle}
                 className="flex justify-center text-[#5D32E3] mx-10 items-center h-[56px] w-[232px] gap-[10px] md:mt-10 lg:mt-16"
               >
@@ -311,6 +340,8 @@ const Work = ({ mulish, dmSans }) => {
         <div className="overflow-hidden">
           <div className="text-center space-y-2 mt-16" style={dmSans}>
             <h1
+              data-aos="fade-down"
+              data-aos-duration="500"
               style={mulish}
               className="font-black leading-[36px] text-[#111111] text-[28px]"
             >
@@ -335,6 +366,8 @@ const Work = ({ mulish, dmSans }) => {
                 }}
               >
                 <img
+                  data-aos="fade-up"
+                  data-aos-duration="600"
                   src={work}
                   alt="work"
                   className="rounded-t-3xl w-[272.47px] h-full object-cover object-top"
@@ -349,7 +382,11 @@ const Work = ({ mulish, dmSans }) => {
                   onClick={handleToggle1}
                   className="flex flex-col sm:mt-7 sm:space-y-3 space-y-4 px-5"
                 >
-                  <div className="flex space-x-5">
+                  <div
+                    className="flex space-x-5"
+                    data-aos="fade-right"
+                    data-aos-duration="600"
+                  >
                     {toggle1 ? (
                       <svg
                         onClick={handleToggle1}
@@ -397,6 +434,8 @@ const Work = ({ mulish, dmSans }) => {
                     </h1>
                   </div>
                   <p
+                    data-aos="fade-left"
+                    data-aos-duration="600"
                     className={`max-w-[320px] text-[15px] leading-[24px] sm:text-xs pl-10  ${
                       toggle1
                         ? "text-black"
@@ -413,7 +452,11 @@ const Work = ({ mulish, dmSans }) => {
                   onClick={handleToggle2}
                   className="flex flex-col mt-10 sm:mt-7 sm:space-y-3 space-y-4 px-5"
                 >
-                  <div className="flex space-x-5 items-center">
+                  <div
+                    className="flex space-x-5 items-center"
+                    data-aos="fade-right"
+                    data-aos-duration="600"
+                  >
                     {toggle2 ? (
                       <svg
                         onClick={handleToggle2}
@@ -461,6 +504,8 @@ const Work = ({ mulish, dmSans }) => {
                     </h1>
                   </div>
                   <p
+                    data-aos="fade-left"
+                    data-aos-duration="600"
                     className={`max-w-[320px] text-[15px] leading-[24px] sm:text-xs pl-10 ${
                       toggle2
                         ? "text-black"
@@ -480,7 +525,11 @@ const Work = ({ mulish, dmSans }) => {
                   onClick={handleToggle3}
                   className="flex flex-col mt-10 sm:mt-7 sm:space-y-3 space-y-4 px-5"
                 >
-                  <div className="flex space-x-5 items-center">
+                  <div
+                    className="flex space-x-5 items-center"
+                    data-aos="fade-right"
+                    data-aos-duration="600"
+                  >
                     {toggle3 ? (
                       <svg
                         onClick={handleToggle3}
@@ -527,6 +576,8 @@ const Work = ({ mulish, dmSans }) => {
                     </h1>
                   </div>
                   <p
+                    data-aos="fade-left"
+                    data-aos-duration="600"
                     className={`max-w-[320px] text-[15px] sm:text-xs leading-[24px] pl-10 ${
                       toggle3
                         ? "text-black"
@@ -543,6 +594,8 @@ const Work = ({ mulish, dmSans }) => {
 
               <div className=" sm:block mx-auto sm:mx-10 sm:mt-2">
                 <div
+                  data-aos="fade-up"
+                  data-aos-duration="600"
                   style={workButtonStyle}
                   className="flex justify-center text-[#5D32E3] items-center h-[56px] w-[232px] gap-[10px] mt-10 sm:mt-7"
                 >
