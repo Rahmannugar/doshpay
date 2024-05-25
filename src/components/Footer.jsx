@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useMediaQuery } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Footer = ({ mulish, dmSans, sofiaSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
@@ -8,6 +10,10 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
     background: "white",
     boxShadow: "0px 20px 32px 0px rgba(0, 0, 0, 0.16)",
   };
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <div className="mt-72">
       {isNonMobileScreens ? (
@@ -39,12 +45,16 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
 
               <div className="flex flex-col justify-center items-center space-y-10 pt-32">
                 <h1
+                  data-aos="fade-down"
+                  data-aos-duration="700"
                   style={mulish}
                   className="xl:text-[44px] z-10 font-extrabold lg:text-2xl leading-[55px] text-white"
                 >
                   Download Doshpay Today!
                 </h1>
                 <p
+                  data-aos="fade-up"
+                  data-aos-duration="700"
                   style={dmSans}
                   className="leading-7 font-medium z-10 text-white opacity-80"
                 >
@@ -54,6 +64,8 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
               </div>
               <div className="flex justify-center items-center space-x-16 mt-7">
                 <div
+                  data-aos="fade-right"
+                  data-aos-duration="700"
                   style={heroButtonStyle}
                   className="flex justify-center items-center z-10 h-[56px] w-[262px] gap-[10px] md:mt-10 lg:mt-16"
                 >
@@ -75,6 +87,8 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   </h1>
                 </div>
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="700"
                   style={heroButtonStyle}
                   className="flex justify-center items-center z-10 h-[56px] w-[262px] gap-[10px] md:mt-10 lg:mt-16"
                 >
@@ -100,7 +114,11 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
           </div>
 
           <div className="w-full mt-36 lg:px-10 xl:px-16">
-            <div className="rounded-[100px] h-[72px] flex justify-between items-center px-10 w-full bg-white bg-opacity-20 shadow-lg">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="700"
+              className="rounded-[100px] h-[72px] flex justify-between items-center px-10 w-full bg-white bg-opacity-20 shadow-lg"
+            >
               <input
                 style={mulish}
                 type="text"
@@ -126,9 +144,17 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
               </div>
             </div>
 
-            <div className="w-full border-[rgba(255,255,255,0.4)] border-[1px] mt-24"></div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="700"
+              className="w-full border-[rgba(255,255,255,0.4)] border-[1px] mt-24"
+            ></div>
 
-            <div className="flex justify-center items-center space-x-3 mt-7">
+            <div
+              className="flex justify-center items-center space-x-3 mt-7"
+              data-aos="fade-right"
+              data-aos-duration="700"
+            >
               <svg
                 width="36"
                 height="40"
@@ -152,7 +178,11 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
               </h1>
             </div>
 
-            <div className="flex justify-end">
+            <div
+              className="flex justify-end"
+              data-aos="fade-left"
+              data-aos-duration="700"
+            >
               <svg
                 width="76"
                 height="76"
@@ -224,13 +254,19 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
             </div>
 
             <h1
+              data-aos="zoom-in"
+              data-aos-duration="700"
               style={mulish}
               className="font-medium text-lg leading-[22px] text-white opacity-80  text-center"
             >
               Follow us on
             </h1>
 
-            <div className="w-full border-[rgba(255,255,255,0.4)] flex items-center justify-between h-[60px] border-t-[1px] border-b-[1px] mt-5">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="700"
+              className="w-full border-[rgba(255,255,255,0.4)] flex items-center justify-between h-[60px] border-t-[1px] border-b-[1px] mt-5"
+            >
               <div className="flex space-x-3 items-center  border-[rgba(255,255,255,0.4)] border-r-[1px] h-full justify-center w-1/4">
                 <svg
                   width="24"
@@ -345,12 +381,16 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
 
               <div className="flex flex-col justify-center text-center px-5 items-center space-y-10 pt-28">
                 <h1
+                  data-aos="fade-down"
+                  data-aos-duration="700"
                   style={mulish}
                   className="text-xl z-10 font-extrabold text-white"
                 >
                   Download Doshpay Today!
                 </h1>
                 <p
+                  data-aos="fade-up"
+                  data-aos-duration="700"
                   style={dmSans}
                   className=" font-medium z-10 text-white opacity-80"
                 >
@@ -361,6 +401,8 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
               <div className="flex justify-center items-center px-5 space-x-3 mt-7">
                 <div
                   style={heroButtonStyle}
+                  data-aos="fade-right"
+                  data-aos-duration="700"
                   className="flex justify-center items-center z-10 h-[50px] w-1/2 space-x-3 px-1"
                 >
                   <svg
@@ -381,6 +423,8 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                   </h1>
                 </div>
                 <div
+                  data-aos="fade-left"
+                  data-aos-duration="700"
                   style={heroButtonStyle}
                   className="flex justify-center items-center z-10 h-[50px] w-1/2 space-x-3 px-1"
                 >
@@ -406,7 +450,11 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
           </div>
 
           <div className="w-full mt-20 px-5 sm:px-10">
-            <div className="rounded-[100px] h-[60px] flex justify-between items-center px-5 w-full bg-white bg-opacity-20 shadow-lg">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="700"
+              className="rounded-[100px] h-[60px] flex justify-between items-center px-5 w-full bg-white bg-opacity-20 shadow-lg"
+            >
               <input
                 style={mulish}
                 type="text"
@@ -432,9 +480,17 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
               </div>
             </div>
 
-            <div className="w-full border-[rgba(255,255,255,0.4)] border-[1px] mt-16"></div>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="700"
+              className="w-full border-[rgba(255,255,255,0.4)] border-[1px] mt-16"
+            ></div>
 
-            <div className="flex justify-center items-center space-x-3 mt-5">
+            <div
+              className="flex justify-center items-center space-x-3 mt-5"
+              data-aos="fade-right"
+              data-aos-duration="700"
+            >
               <svg
                 width="36"
                 height="40"
@@ -458,7 +514,11 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
               </h1>
             </div>
 
-            <div className="flex justify-end">
+            <div
+              className="flex justify-end"
+              data-aos="fade-left"
+              data-aos-duration="700"
+            >
               <svg
                 width="76"
                 height="76"
@@ -530,13 +590,19 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
             </div>
 
             <h1
+              data-aos="zoom-in"
+              data-aos-duration="700"
               style={mulish}
               className="font-medium text-lg text-white opacity-80  text-center"
             >
               Follow us on
             </h1>
 
-            <div className="w-full border-[rgba(255,255,255,0.4)] flex items-center justify-between h-[60px] border-t-[1px] border-b-[1px] mt-5">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="700"
+              className="w-full border-[rgba(255,255,255,0.4)] flex items-center justify-between h-[60px] border-t-[1px] border-b-[1px] mt-5"
+            >
               <div className="flex space-x-1 items-center  border-[rgba(255,255,255,0.4)] border-r-[1px] h-full justify-center w-1/4">
                 <svg
                   width="24"
