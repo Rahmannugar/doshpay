@@ -2,6 +2,9 @@ import { useMediaQuery } from "@mui/material";
 import advert1 from "../assets/advert-1.png";
 import advert2 from "../assets/advert-2.png";
 import advert3 from "../assets/advert-3.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Transfer = ({ mulish, dmSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:1024px)");
@@ -11,13 +14,17 @@ const Transfer = ({ mulish, dmSans }) => {
     boxShadow: "0px 12x 24px 0px rgba(0, 0, 0, 0.12)",
     padding: "1px 26px 1px 0px",
   };
-
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <div>
       {isNonMobileScreens ? (
         <div className="px-10 xl:px-16 mt-36">
           <div className=" 2xl:flex 2xl:items-center 2xl:justify-center">
             <h1
+              data-aos="fade-right"
+              data-aos-duration="700"
               style={mulish}
               className=" text-[36px] xl:text-[44px] font-extrabold max-w-[746px] leading-[50px] xl:leading-[60px]"
             >
@@ -36,16 +43,25 @@ const Transfer = ({ mulish, dmSans }) => {
                 <h1
                   style={mulish}
                   className="font-extrabold text-2xl leading-[30px] mt-12"
+                  data-aos="fade-down"
+                  data-aos-duration="700"
                 >
                   Fast and Secure Cash Transfer
                 </h1>
-                <p style={dmSans} className="leading-[20px] max-w-[360px] mt-5">
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="700"
+                  style={dmSans}
+                  className="leading-[20px] max-w-[360px] mt-5"
+                >
                   Send money securely to any local bank around the clock with
                   the assurance of robust encryption protecting your
                   transactions.
                 </p>
 
                 <div
+                  data-aos="zoom-in"
+                  data-aos-duration="700"
                   style={transferButtonStyle}
                   className="flex justify-center items-center h-[48px] w-[209px] gap-[7px] mt-10"
                 >
@@ -96,7 +112,12 @@ const Transfer = ({ mulish, dmSans }) => {
               </div>
 
               <div className="flex justify-end items-center mt-3">
-                <img src={advert1} alt="advert1" />
+                <img
+                  src={advert1}
+                  alt="advert1"
+                  data-aos="fade-left"
+                  data-aos-duration="700"
+                />
               </div>
             </div>
 
@@ -109,17 +130,29 @@ const Transfer = ({ mulish, dmSans }) => {
               >
                 <div className="space-y-5">
                   <h1
+                    data-aos="fade-down"
+                    data-aos-duration="700"
                     style={mulish}
                     className="font-extrabold leading-[27px] max-w-[210px] text-[22px]"
                   >
                     Daily Financial Tips
                   </h1>
-                  <p style={dmSans} className="leading-[20px] max-w-[210px]">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    style={dmSans}
+                    className="leading-[20px] max-w-[210px]"
+                  >
                     Receive daily financial tips to help you make informed
                     decisions.
                   </p>
                 </div>
-                <img src={advert2} alt="advert2" />
+                <img
+                  src={advert2}
+                  alt="advert2"
+                  data-aos="fade-left"
+                  data-aos-duration="700"
+                />
               </div>
 
               <div
@@ -130,17 +163,30 @@ const Transfer = ({ mulish, dmSans }) => {
               >
                 <div className="space-y-5">
                   <h1
+                    data-aos="fade-down"
+                    data-aos-duration="700"
                     style={mulish}
                     className="font-extrabold leading-[27px] max-w-[210px] text-[22px]"
                   >
                     Flexible Payment Options
                   </h1>
-                  <p style={dmSans} className="leading-[20px] max-w-[210px]">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    style={dmSans}
+                    className="leading-[20px] max-w-[210px]"
+                  >
                     Simplify transactions by sending and receiving money using
                     Doshpay tags.
                   </p>
                 </div>
-                <img src={advert3} alt="advert3" className="w-[287px] mt-20" />
+                <img
+                  src={advert3}
+                  alt="advert3"
+                  className="w-[287px] mt-20"
+                  data-aos="fade-left"
+                  data-aos-duration="700"
+                />
               </div>
             </div>
           </div>
@@ -148,6 +194,8 @@ const Transfer = ({ mulish, dmSans }) => {
       ) : (
         <div className="mt-20">
           <h1
+            data-aos="fade-right"
+            data-aos-duration="700"
             style={mulish}
             className=" text-2xl text-center font-extrabold px-10"
           >
@@ -163,12 +211,19 @@ const Transfer = ({ mulish, dmSans }) => {
             >
               <div className="px-5">
                 <h1
+                  data-aos="fade-down"
+                  data-aos-duration="700"
                   style={mulish}
                   className="font-extrabold text-2xl leading-[30px] mt-12"
                 >
                   Fast and Secure Cash Transfer
                 </h1>
-                <p style={dmSans} className="leading-[20px] max-w-[360px] mt-5">
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="700"
+                  style={dmSans}
+                  className="leading-[20px] max-w-[360px] mt-5"
+                >
                   Send money securely to any local bank around the clock with
                   the assurance of robust encryption protecting your
                   transactions.
@@ -176,6 +231,8 @@ const Transfer = ({ mulish, dmSans }) => {
 
                 <div
                   style={transferButtonStyle}
+                  data-aos="fade-right"
+                  data-aos-duration="700"
                   className="flex justify-center items-center h-[48px] w-[209px] gap-[7px] mt-10"
                 >
                   <svg
@@ -225,7 +282,13 @@ const Transfer = ({ mulish, dmSans }) => {
               </div>
 
               <div className="flex justify-end items-center mt-6">
-                <img src={advert1} alt="advert1" className="" />
+                <img
+                  src={advert1}
+                  alt="advert1"
+                  className=""
+                  data-aos="fade-left"
+                  data-aos-duration="700"
+                />
               </div>
             </div>
 
@@ -238,17 +301,30 @@ const Transfer = ({ mulish, dmSans }) => {
               >
                 <div className="space-y-3">
                   <h1
+                    data-aos="fade-down"
+                    data-aos-duration="700"
                     style={mulish}
                     className="font-extrabold max-w-[210px] text-xl"
                   >
                     Daily Financial Tips
                   </h1>
-                  <p style={dmSans} className="max-w-[210px]">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    style={dmSans}
+                    className="max-w-[210px]"
+                  >
                     Receive daily financial tips to help you make informed
                     decisions.
                   </p>
                 </div>
-                <img src={advert2} alt="advert2" className="mt-5" />
+                <img
+                  src={advert2}
+                  alt="advert2"
+                  className="mt-5"
+                  data-aos="fade-left"
+                  data-aos-duration="700"
+                />
               </div>
 
               <div
@@ -259,17 +335,30 @@ const Transfer = ({ mulish, dmSans }) => {
               >
                 <div className="space-y-3">
                   <h1
+                    data-aos="fade-down"
+                    data-aos-duration="700"
                     style={mulish}
                     className="font-extrabold max-w-[210px] text-xl"
                   >
                     Flexible Payment Options
                   </h1>
-                  <p style={dmSans} className="max-w-[210px]">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    style={dmSans}
+                    className="max-w-[210px]"
+                  >
                     Simplify transactions by sending and receiving money using
                     Doshpay tags.
                   </p>
                 </div>
-                <img src={advert3} alt="advert3" className="w-[287px] mt-7" />
+                <img
+                  src={advert3}
+                  alt="advert3"
+                  className="w-[287px] mt-7"
+                  data-aos="fade-left"
+                  data-aos-duration="700"
+                />
               </div>
             </div>
           </div>
