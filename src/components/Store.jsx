@@ -1,8 +1,10 @@
 import { useMediaQuery } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import store1 from "../assets/store-1.png";
 import store2 from "../assets/store-2.png";
 import hands from "../assets/hands.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Store = ({ mulish, dmSans }) => {
   const isNonMobileScreens = useMediaQuery("(min-width:768px)");
@@ -52,6 +54,10 @@ const Store = ({ mulish, dmSans }) => {
     transform: "rotate(-50.42deg)",
   };
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <div>
       {isNonMobileScreens ? (
@@ -64,13 +70,19 @@ const Store = ({ mulish, dmSans }) => {
               }}
             >
               <h1
+                data-aos="fade-down"
+                data-aos-duration="700"
                 className="text-white font-bold leading-10 mt-12 text-xl lg:text-3xl xl:text-4xl xl:leading-[64px]"
                 style={mulish}
               >
                 Get DoshPay for IOS
               </h1>
 
-              <div className="w-[222px] py-4 rounded-[100px] bg-white flex items-center justify-center space-x-2 mt-6">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="700"
+                className="w-[222px] py-4 rounded-[100px] bg-white flex items-center justify-center space-x-2 mt-6"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -104,6 +116,8 @@ const Store = ({ mulish, dmSans }) => {
 
               <div className="z-10">
                 <img
+                  data-aos="flip-right"
+                  data-aos-duration="700"
                   src={store1}
                   alt="store1"
                   className="mt-[74px] lg:mt-[78px] xl:mt-[50px]"
@@ -117,11 +131,19 @@ const Store = ({ mulish, dmSans }) => {
                 background: "rgba(190, 207, 243, 0.8)",
               }}
             >
-              <h1 className="text-black font-bold leading-10 mt-12 text-xl lg:text-3xl xl:text-4xl xl:leading-[64px]">
+              <h1
+                data-aos="fade-down"
+                data-aos-duration="700"
+                className="text-black font-bold leading-10 mt-12 text-xl lg:text-3xl xl:text-4xl xl:leading-[64px]"
+              >
                 Get DoshPay for Android
               </h1>
 
-              <div className="w-[222px] py-4 rounded-[100px] bg-white flex items-center justify-center space-x-2 mt-6">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="700"
+                className="w-[222px] py-4 rounded-[100px] bg-white flex items-center justify-center space-x-2 mt-6"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -162,7 +184,13 @@ const Store = ({ mulish, dmSans }) => {
               </div>
 
               <div className="z-10">
-                <img src={store2} alt="store2" className="mt-[74px] xl:mt-12" />
+                <img
+                  data-aos="flip-left"
+                  data-aos-duration="700"
+                  src={store2}
+                  alt="store2"
+                  className="mt-[74px] xl:mt-12"
+                />
               </div>
             </div>
           </div>
@@ -194,7 +222,11 @@ const Store = ({ mulish, dmSans }) => {
             <div className="bottom-0" style={firstRightSideStyle}></div>
 
             <div className="flex justify-between px-10 space-x-3 xl:px-16 2xl:justify-center">
-              <div className="text-white z-10 py-16 lg:py-14 xl:py-[58px]">
+              <div
+                className="text-white z-10 py-16 lg:py-14 xl:py-[58px]"
+                data-aos="zoom-in"
+                data-aos-duration="700"
+              >
                 <h1
                   className="font-bold text-2xl leading-[30px] xl:text-[38px] xl:leading-[50px] lg:text-3xl lg:leading-[30px]"
                   style={mulish}
@@ -238,6 +270,8 @@ const Store = ({ mulish, dmSans }) => {
 
               <div className="z-10">
                 <img
+                  data-aos="fade-left"
+                  data-aos-duration="700"
                   src={hands}
                   alt="hands"
                   className="w-[380px] h-[380px] object-cover"
@@ -255,12 +289,18 @@ const Store = ({ mulish, dmSans }) => {
             }}
           >
             <h1
+              data-aos="fade-down"
+              data-aos-duration="700"
               className="font-bold text-[28px] leading-[36px] text-white mt-16"
               style={mulish}
             >
               Get DoshPay for IOS
             </h1>
-            <div className="w-[222px] py-4 rounded-[100px] bg-white flex items-center justify-center space-x-2 mt-10">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="700"
+              className="w-[222px] py-4 rounded-[100px] bg-white flex items-center justify-center space-x-2 mt-10"
+            >
               <svg
                 width="24"
                 height="24"
@@ -294,7 +334,13 @@ const Store = ({ mulish, dmSans }) => {
             </div>
 
             <div className="z-10">
-              <img src={store1} alt="store1" className="mt-[73px] w-[296px]" />
+              <img
+                src={store1}
+                data-aos="flip-right"
+                data-aos-duration="700"
+                alt="store1"
+                className="mt-[73px] w-[296px]"
+              />
             </div>
           </div>
 
@@ -304,10 +350,18 @@ const Store = ({ mulish, dmSans }) => {
               background: "rgba(190, 207, 243, 0.8)",
             }}
           >
-            <h1 className="font-bold text-[28px] leading-[36px] text-black mt-16">
+            <h1
+              data-aos="fade-down"
+              data-aos-duration="700"
+              className="font-bold text-[28px] leading-[36px] text-black mt-16"
+            >
               Get DoshPay for Android
             </h1>
-            <div className="w-[222px] py-4 rounded-[100px] bg-white flex items-center justify-center space-x-2 mt-10">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="700"
+              className="w-[222px] py-4 rounded-[100px] bg-white flex items-center justify-center space-x-2 mt-10"
+            >
               <svg
                 width="24"
                 height="24"
@@ -348,7 +402,13 @@ const Store = ({ mulish, dmSans }) => {
             </div>
 
             <div className="z-10">
-              <img src={store2} alt="store2" className="mt-[88px] w-[296px]" />
+              <img
+                src={store2}
+                data-aos="flip-left"
+                data-aos-duration="700"
+                alt="store2"
+                className="mt-[88px] w-[296px]"
+              />
             </div>
           </div>
 
@@ -383,7 +443,11 @@ const Store = ({ mulish, dmSans }) => {
               <div className="bottom-0" style={firstRightSideStyle}></div>
 
               <div className="flex justify-between sm:space-x-4 px-7 sm:px-10">
-                <div className="text-white z-10 py-8">
+                <div
+                  className="text-white z-10 py-8"
+                  data-aos="zoom-in"
+                  data-aos-duration="700"
+                >
                   <h1 className="font-bold text-xl sm:text-2xl" style={mulish}>
                     Refer Friends and Earn Cashbacks
                   </h1>
@@ -424,6 +488,8 @@ const Store = ({ mulish, dmSans }) => {
 
                 <div className="z-10 items-center flex">
                   <img
+                    data-aos="fade-left"
+                    data-aos-duration="700"
                     src={hands}
                     alt="hands"
                     className="w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] object-contain"
