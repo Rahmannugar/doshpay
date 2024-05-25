@@ -461,7 +461,7 @@ const Footer = ({ mulish, dmSans, sofiaSans }) => {
                 className=" text-white placeholder-white bg-transparent text-sm rounded-[100px] outline-none flex-grow h-full px-3"
                 placeholder="Your email address"
               />
-              <div className="bg-white rounded-[100px] hover:bg-[#4818DC] duration-300 flex justify-center items-center w-1/3 space-x-3 h-[45px]">
+              <div className="bg-white rounded-[100px] hover:bg-[#4818DC] duration-300 flex justify-center items-center w-1/3 space-x-2 sm:space-x-3 h-[45px]">
                 <h1 className="text-black font-bold text-xs" style={dmSans}>
                   Subscribe
                 </h1>
